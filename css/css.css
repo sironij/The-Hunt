@@ -1,0 +1,170 @@
+  body, html {
+    margin: 0;
+    background-image: url("homeBack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .menu-bar {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    z-index: 10;
+  }
+
+  .menu-bar img {
+    padding-left: 2em;
+    cursor: pointer;
+  }
+
+  .menu-bar a {
+    font-family: arial;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 2em;
+    text-decoration: none;
+  }
+
+  .menu-bar a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+
+  .sticky img {
+    max-height: 90vh;
+  }
+
+  #title {
+    align-self: center;
+    flex: 1 0 auto;
+    margin-top: 20%;
+  }
+
+  #subtitle {
+    flex-shrink: 0;
+    font-family: arial;
+    font-size: 1.5em;
+    font-style: italic;
+    color: white;
+    margin-left: 1.5em;
+  }
+
+  #scroll {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial;
+    color: #8F60CC;
+  }
+
+  #scroll p {
+    margin-block-end: 0.2em;
+  }
+
+  .windows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .windows img {
+    margin-bottom: 10em;
+  }
+
+  #home_1 {
+    top: 20%;
+  }
+
+  #home_2 {
+    top: 30%;
+    right: 40%;
+  }
+
+  #home_3 {
+    top: 25%;
+    left: 30%;
+  }
+
+  #home_4 {
+    top: 15%;
+  }
+
+  #home_5 {
+    top: 35%;
+  }
+
+  #home_6 {
+    top: 12.5%;
+    right: 35%;
+  }
+
+  #home_7 {
+    top: 10%;
+    left: 45%;
+  }
+
+  #home_8 {
+    top: 20%;
+    right: 55%;
+  }
+
+  #home_9 {
+    top: 15%;
+  }
+
+  #home_10 {
+    top: 25%;
+    right: 60%;
+  }
+
+  #home_11 {
+    top: 7.5%;
+    left: 45%;
+  }
+
+  #home_12 {
+    top: 10%;
+    right: 45%;
+  }
+
+  #home_13 {
+    top: 15%;
+  }
+
+  #home_14 {
+    top: 15%;
+  }
+
+  #home_15 {
+    top: 15%;
+  }
+
+  #home_16 {
+    top: 15%;
+  }
