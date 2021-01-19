@@ -97,6 +97,56 @@
     margin-bottom: 10em;
   }
 
+  #alert_active{
+    height: 10vh;
+    width: 100vw;
+    z-index: 14;
+  }
+
+  #separator {
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .lockScroll {
+    overflow: hidden;
+  }
+
+  .unfocused {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+  }
+
+  .alert_container {
+    position: relative;
+    display: none;
+    width: 100vw;
+    height:100vh;
+    z-index: 15;
+  }
+
+  .alert {
+    top: 30%;
+    position: relative;
+    text-align: center;
+  }
+
+  .alert a {
+    font-family: arial;
+    text-decoration: underline;
+  }
+
+  .alert_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
   #home_1 {
     top: 20%;
   }
@@ -113,10 +163,6 @@
 
   #home_4 {
     top: 15%;
-  }
-
-  #home_5 {
-    top: 35%;
   }
 
   #home_6 {

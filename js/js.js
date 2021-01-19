@@ -4,6 +4,69 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
 
+  // prevent refresh
+
+  $(window).on('unload', function() {
+   $(window).scrollTop(0);
+});
+
+window.onunload = function(){ window.scrollTo(0,0); }
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+  // viewport plug in
+  ;
+  (function($, win) {
+    $.fn.inViewport = function(cb) {
+      return this.each(function(i, el) {
+        function visPx() {
+          var H = $(this).height(),
+            r = el.getBoundingClientRect(),
+            t = r.top,
+            b = r.bottom;
+          return cb.call(el, Math.max(0, t > 0 ? H - t : (b < H ? b : H)));
+        }
+        visPx();
+        $(win).on("resize scroll", visPx);
+      });
+    };
+  }(jQuery, window));
+
+  $("#alert_active").inViewport(function(px) {
+    if (px) $(".alert_container").fadeIn();
+  });
+
+
+
+  // lock scroll on alert
+
+  $(".alert_container").inViewport(function(px) {
+    if (px) $("html").addClass("lockScroll");
+    if (px) $(".menu-bar").addClass("unfocused");
+    if (px) $(".container").addClass("unfocused");
+    if (px) $(".sticky").addClass("unfocused");
+  });
+
+
+
+  // reactivate scroll
+
+  $(".alert_btn").click(function() {
+    $("html").removeClass("lockScroll");
+    $(".menu-bar").removeClass("unfocused");
+    $(".container").removeClass("unfocused");
+    $(".sticky").removeClass("unfocused");
+
+
+    $(".alert_container").fadeOut();
+    $("#alert_active").hide();
+
+  });
+
+
+
 
   // 3D effect finestre -> da valutare
   $('html').mousemove(function(e) {
