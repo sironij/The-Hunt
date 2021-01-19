@@ -97,14 +97,14 @@
     margin-bottom: 10em;
   }
 
-  #alert_active{
+  #alert_active {
     height: 10vh;
     width: 100vw;
     z-index: 14;
   }
 
   #separator {
-    height: 90vh;
+    height: 50vh;
     width: 100vw;
   }
 
@@ -123,8 +123,6 @@
   .alert_container {
     position: relative;
     display: none;
-    width: 100vw;
-    height:100vh;
     z-index: 15;
   }
 

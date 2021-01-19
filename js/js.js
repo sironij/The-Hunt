@@ -38,6 +38,17 @@ if ('scrollRestoration' in history) {
     if (px) $(".alert_container").fadeIn();
   });
 
+ //center in viewport
+
+  jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) +
+                                                $(window).scrollLeft()) + "px");
+    return this;
+}
+
 
 
   // lock scroll on alert
@@ -47,6 +58,7 @@ if ('scrollRestoration' in history) {
     if (px) $(".menu-bar").addClass("unfocused");
     if (px) $(".container").addClass("unfocused");
     if (px) $(".sticky").addClass("unfocused");
+    $(".alert_container").center();
   });
 
 
