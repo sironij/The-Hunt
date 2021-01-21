@@ -38,6 +38,15 @@ if ('scrollRestoration' in history) {
     if (px) $(".alert_container").fadeIn();
   });
 
+  $("#alert_active2").inViewport(function(px) {
+    if (px) $(".alert_container2").fadeIn();
+  });
+
+  $("#alert_active3").inViewport(function(px) {
+    if (px) $(".alert_container3").fadeIn();
+  });
+
+
  //center in viewport
 
   jQuery.fn.center = function () {
@@ -50,7 +59,6 @@ if ('scrollRestoration' in history) {
 }
 
 
-
   // lock scroll on alert
 
   $(".alert_container").inViewport(function(px) {
@@ -61,7 +69,21 @@ if ('scrollRestoration' in history) {
     $(".alert_container").center();
   });
 
+  $(".alert_container2").inViewport(function(px) {
+    if (px) $("html").addClass("lockScroll");
+    if (px) $(".menu-bar").addClass("unfocused");
+    if (px) $(".container").addClass("unfocused");
+    if (px) $(".sticky").addClass("unfocused");
+    $(".alert_container2").center();
+  });
 
+  $(".alert_container3").inViewport(function(px) {
+    if (px) $("html").addClass("lockScroll");
+    if (px) $(".menu-bar").addClass("unfocused");
+    if (px) $(".container").addClass("unfocused");
+    if (px) $(".sticky").addClass("unfocused");
+    $(".alert_container3").center();
+  });
 
   // reactivate scroll
 
@@ -71,10 +93,28 @@ if ('scrollRestoration' in history) {
     $(".container").removeClass("unfocused");
     $(".sticky").removeClass("unfocused");
 
-
     $(".alert_container").fadeOut();
     $("#alert_active").hide();
+  });
 
+  $(".alert_btn2").click(function() {
+    $("html").removeClass("lockScroll");
+    $(".menu-bar").removeClass("unfocused");
+    $(".container").removeClass("unfocused");
+    $(".sticky").removeClass("unfocused");
+
+    $(".alert_container2").fadeOut();
+    $("#alert_active2").hide();
+  });
+
+  $(".alert_btn3").click(function() {
+    $("html").removeClass("lockScroll");
+    $(".menu-bar").removeClass("unfocused");
+    $(".container").removeClass("unfocused");
+    $(".sticky").removeClass("unfocused");
+
+    $(".alert_container3").fadeOut();
+    $("#alert_active3").hide();
   });
 
 

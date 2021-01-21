@@ -49,10 +49,15 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    transition: all .2s ease-in-out;
   }
 
   .sticky img {
     max-height: 90vh;
+  }
+
+  .sticky img:hover {
+    transform: scale(1.1)
   }
 
   #title {
@@ -86,6 +91,10 @@
     margin-block-end: 0.2em;
   }
 
+  #scroll img {
+    max-height: 2vh;
+  }
+
   .windows {
     display: flex;
     flex-direction: column;
@@ -98,6 +107,12 @@
   }
 
   #alert_active {
+    height: 10vh;
+    width: 100vw;
+    z-index: 14;
+  }
+
+  #alert_active2 {
     height: 10vh;
     width: 100vw;
     z-index: 14;
@@ -126,6 +141,18 @@
     z-index: 15;
   }
 
+  .alert_container2 {
+    position: relative;
+    display: none;
+    z-index: 15;
+  }
+
+  .alert_container3 {
+    position: relative;
+    display: none;
+    z-index: 15;
+  }
+
   .alert {
     top: 30%;
     position: relative;
@@ -139,7 +166,23 @@
 
   .alert_btn {
     position: absolute;
-    top: 50%;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .alert_btn2 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .alert_btn3 {
+    position: absolute;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
