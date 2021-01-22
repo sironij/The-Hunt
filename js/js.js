@@ -146,4 +146,38 @@ if ('scrollRestoration' in history) {
 
   });
 
+//----------------- Marco Js---------------
+var modal = document.getElementById("myModal");
+
+//Funciton on click change content of img and redirect to different episode
+//var declaration for element to be filled with json/csv data
+var prev1 = document.getElementById("prev1");
+var prev2 = document.getElementById("prev2");
+var prev3 = document.getElementById("prev3");
+var prev4 = document.getElementById("prev4");
+var prev5 = document.getElementById("prev5");
+var prev6 = document.getElementById("prev6");
+
+var description = document.getElementById("contentDesc");
+var doc1 = document.getElementsById("link1");
+var doc2 = document.getElementsById("link2");
+var doc3 = document.getElementsById("link3");
+var doc4 = document.getElementsById("link4");
+var video = document.getElementById("video");
+var titoloEp = docuemnt.getElementById("titoloEp")
+
+
+
+
+
+
+// Get the <span> element that closes the modal //
+// var span = document.getElementsByClassName("spegni")[0];
+
+
+//--------Marco Js End
+
+
+
+
 });

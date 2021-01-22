@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Conspiracy Theories Deconstructed</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+  <link href="css/css.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body class="docu">
+
+  <div class="menu-bar">
+    <div id="home-button">
+      <img src="icons/home-logo.svg">
+    </div>
+    <div id="menu">
+      <a href="episodes.html">episodes</a>
+      <a href="#what's behind">what's behind</a>
+    </div>
+  </div>
+
+<div id="myModal" class="modal" onclick="closeNav()"> 
+    <div class="modal-content">
+        <div class="barra">
+            <div class="spegni">
+   <img src="images/UI/barBut.svg" height="auto" width="5%" >
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="episodio">
+                 <div class="videocontainer">
+                    <iframe id="video" width="100vw" height="500vh" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+              <div class="suggeriti">
+                    <img id="prev1" class="preview " value="" src="images/preview.png"> 
+                    <img id="prev2" class="preview " value="" src="images/preview.png">            
+                    <img id="prev3" class="preview " value="" src="images/preview.png"> 
+                    <img id="prev4" class="preview " value="" src="images/preview.png">             
+                    <img id="prev5" class="preview " value="" src="images/preview.png"> 
+                    <img id="prev6" class="preview " value="" src="images/preview.png"> 
+            </div>
+            </div>
+            <div class="rightCont">
+              <div class="linecont">
+                <div class="line">
+                </div>
+              </div>
+              <div class="contInfo">
+                    <div class="info">
+                      <h4 id="titoloEp"> Titolo di prova </h4>
+                      <img src="images/preview.png" id="coverEp"  alt="">
+                       <p id="descrizione1" class="titoletto">
+                        Descrizione
+                       </p>
+                       <p id="contentDesc" >
+                        The posts analysis of the profile previously found led to the identification of an unexpected truth: not all messages are harmless as it could seem.
+                       </p>
+                       <p id="documentazione1" class="titoletto">
+                        Documentazione
+                       </p>
+                       <a id="link1" href="">link1</a>
+                       <br>
+                       <a id="link2" href="">link2</a>
+                       <br>
+                       <a id="link3" href="">link3</a>
+                       <br>
+                       <a id="link4" href="">link4</a>
+                    </div>
+              </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<script src="js/js.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>

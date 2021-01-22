@@ -7,6 +7,10 @@
     background-size: cover;
   }
 
+.docu{
+  overflow: hidden;
+}
+
   .menu-bar {
     position: fixed;
     display: flex;
@@ -255,3 +259,117 @@
   #home_16 {
     top: 15%;
   }
+
+  /*///////////////////////////MODALS/////////////////////////////*/
+/* The Modal (background) */
+.modal {
+  /* display: none; Hidden by default */
+  top: -2rem;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow: hidden;  Enable scroll if needed */
+  border-radius: 10px;
+  position: absolute;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #EBEFF5;
+  margin: 15vh auto; /* 15% from the top and centered */
+  /*    padding-bottom: 10px;*/
+  border:1px solid #CACED4;
+  width: 85vw; /* Could be more or less, depending on screen size */
+  height: 80vh;
+  box-sizing: border-box;
+box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+
+
+}
+
+
+
+.barra {
+  background-color:#EBEFF5;
+  position:relative;
+  /* border: 1px solid #CACED4; */
+  padding: 0px;
+  border-radius: 10px;
+}
+
+/*The Close Button */
+ .spegni {
+  color: #C4C4C4;
+  font-size: 1.5em;
+  border-bottom: 1px solid #CACED4;
+  padding:1%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.07);
+  border-radius: 10px 10px 0px 0px;}
+
+ 
+
+ .linecont{
+   height: 100%;
+   width: 5%;
+   display: inline-block;
+ }
+
+iframe{
+  border-style: none;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.preview{
+  width: 10%;
+  padding:1.5%;
+}
+
+img{
+  cursor: pointer;
+}
+
+
+
+.line{
+  background-color: #CACED4;
+  height: 65vh;
+  width: 1px;
+  display: inline-block;
+}
+#coverEp{
+width: 40%
+
+}
+.episodio{
+margin:2%;
+  width: 65vw;
+  display: inline-block;
+  position: absolute;
+  
+
+}
+
+.rightCont{
+  position: absolute;
+    width: 60%;
+    right: -35%;
+}
+
+.contInfo{
+    width: 15%;
+    display: inline-block;
+ margin-top: 1%;
+ position: absolute;
+}
+
+.suggeriti{
+  text-align: center;
+}
+
+.videocontainer{
+ width: 90%;
+ margin: auto;
+}
