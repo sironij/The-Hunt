@@ -7,9 +7,9 @@
     background-size: cover;
   }
 
-.docu{
-  overflow: hidden;
-}
+  .docu {
+    overflow: hidden;
+  }
 
   .menu-bar {
     position: fixed;
@@ -261,117 +261,90 @@
   }
 
   /*///////////////////////////MODALS/////////////////////////////*/
-/* The Modal (background) */
-.modal {
-  /* display: none; Hidden by default */
-  top: -2rem;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  /*overflow: hidden;  Enable scroll if needed */
-  border-radius: 10px;
-  position: absolute;
+  /* The Modal (background) */
+  .modal {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEFF5;
+    width: 90%;
+    height: 85%;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 1em;
+  }
 
-}
+  .barra {
+    order: 1;
+    background-color: #EBEFF5;
+    position: relative;
+    padding: 0px;
+    border-radius: 10px;
+  }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #EBEFF5;
-  margin: 15vh auto; /* 15% from the top and centered */
-  /*    padding-bottom: 10px;*/
-  border:1px solid #CACED4;
-  width: 85vw; /* Could be more or less, depending on screen size */
-  height: 80vh;
-  box-sizing: border-box;
-box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
-border-radius: 10px;
+  /*The Close Button */
+  .spegni {
+    color: #C4C4C4;
+    font-size: 1.5em;
+    border-bottom: 1px solid #CACED4;
+    padding: 1%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.07);
+    border-radius: 10px 10px 0px 0px;
+  }
 
+  .content {
+    order: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
 
-}
+  .leftCont {
+    order: 1;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .videocontainer {
+    margin: 1.5em;
+    flex-grow: 6;
+  }
 
+  .videocontainer iframe{
+    border-radius: 1em;
+    border-style: none;
+  }
 
-.barra {
-  background-color:#EBEFF5;
-  position:relative;
-  /* border: 1px solid #CACED4; */
-  padding: 0px;
-  border-radius: 10px;
-}
-
-/*The Close Button */
- .spegni {
-  color: #C4C4C4;
-  font-size: 1.5em;
-  border-bottom: 1px solid #CACED4;
-  padding:1%;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.07);
-  border-radius: 10px 10px 0px 0px;}
-
-
-
- .linecont{
-   height: 100%;
-   width: 5%;
-   display: inline-block;
- }
-
-iframe{
-  border-style: none;
-  justify-content: center;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.preview{
-  width: 10%;
-  padding:1.5%;
-}
-
-img{
-  cursor: pointer;
-}
-
-
-
-.line{
-  background-color: #CACED4;
-  height: 65vh;
-  width: 1px;
-  display: inline-block;
-}
-#coverEp{
-width: 40%
-
-}
-.episodio{
-margin:2%;
-  width: 65vw;
-  display: inline-block;
-  position: absolute;
-
-
-}
-
-.rightCont{
-  position: absolute;
-    width: 60%;
-    right: -35%;
-}
-
-.contInfo{
-    width: 15%;
+  .rightCont {
+    order: 2;
+    width: 25%;
+    height: 100%;
     display: inline-block;
- margin-top: 1%;
- position: absolute;
-}
+    border-left: 1px solid #CACED4;
+    box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.07);
+    padding-left: 1em;
+  }
 
-.suggeriti{
-  text-align: center;
-}
+  #coverEp {
+    width: 40%
+  }
 
-.videocontainer{
- width: 90%;
- margin: auto;
-}
+  .preview {
+    width: 10%;
+    padding-right: 3%;
+  }
 
-.test{}
+  .preview img {
+    cursor: pointer;
+  }
+
+  .suggeriti {
+    flex-grow: 1;
+    margin-left: 1.5em;
+  }
