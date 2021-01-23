@@ -334,6 +334,21 @@
     border-style: none;
   }
 
+  .preview {
+    width: 75%;
+  }
+
+  .preview img {
+    cursor: pointer;
+  }
+
+  .suggeriti {
+    flex-grow: 1;
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: row;
+  }
+
   .rightCont {
     order: 2;
     height: 100%;
@@ -351,20 +366,11 @@
     width: 40%
   }
 
-  .preview {
-    width: 75%;
+  #previewEP {
+    width: 50%;
   }
 
-  .preview img {
-    cursor: pointer;
-  }
 
-  .suggeriti {
-    flex-grow: 1;
-    margin-left: 1.5em;
-    display: flex;
-    flex-direction: row;
-  }
 
   /*What's behind*/
   #wb-leftCont {
