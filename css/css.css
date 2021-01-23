@@ -16,6 +16,10 @@
     overflow: hidden;
   }
 
+#home-button img{
+    
+    width: 4.5em;
+}
   .menu-bar {
     position: fixed;
     display: flex;
