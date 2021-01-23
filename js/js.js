@@ -159,17 +159,35 @@ var prev5 = document.getElementById("prev5");
 var prev6 = document.getElementById("prev6");
 var prev7 = document.getElementById("prev7");
 var prevEp = document.getElementById("previewEp")
+var prevGen = $(".preview");
 
 var description = document.getElementById("contentDesc");
-var doc1 = document.getElementsById("link1");
-var doc2 = document.getElementsById("link2");
-var doc3 = document.getElementsById("link3");
-var doc4 = document.getElementsById("link4");
+var doc1 = document.getElementById("link1");
+var doc2 = document.getElementById("link2");
+var doc3 = document.getElementById("link3");
+var doc4 = document.getElementById("link4");
 var video = document.getElementById("video");
-var titoloEp = docuemnt.getElementById("titoloEp")
-const episodi= $.getJSON("episodes.json");
+var titoloEp = document.getElementById("titoloEp")
 
-prev1.onclick()
+const episodi= $.getJSON("episodes.json");
+//const obj = JSON.parse(episodi)
+    
+prevGen.mouseover(function(){
+    prevGen.css("cursor"," pointer");
+                  });
+    
+    
+function alessio(a) {
+       var prev = a.attr('id');
+    var test =  $("#prev1").attr("id");
+       console.log("prev "+prev + "test "+ test);
+    }
+    
+    
+prevGen.click(function(){
+    prova = $(this);
+    alessio(prova);
+})
 
 
 
