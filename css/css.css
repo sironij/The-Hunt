@@ -7,6 +7,11 @@
     background-size: cover;
   }
 
+  h2{
+    font-family: "Inter";
+
+  }
+
   .docu {
     overflow: hidden;
   }
@@ -363,6 +368,20 @@
     cursor: pointer;
   }
 
+  .wb-sidenav a:active {
+    font-weight: bold;
+  }
+
   #wb-rightCont {
     width: 70%;
+    padding: 0 !important;
+  }
+
+  .wb-description {
+    padding: 1.5em 3em 1.5em 3em;
+  }
+
+  .wb-description p{
+    font-family: "Inter";
+    font-size: 0.8em;
   }
