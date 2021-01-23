@@ -338,19 +338,39 @@
     border-style: none;
   }
 
+  .suggeriti {
+    flex-grow: 1;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
   .preview {
-    width: 80%;
-    cursor: pointer;
+    position: relative;
+    padding: 10% 5% 10% 5%;
+    height: 25%;
+    border-radius: 2.5px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .preview img {
     cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .fileName {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .preview-selected {
+    background-color: #E6E6E6;
   }
 
   .fileName-selected {
@@ -362,15 +382,7 @@
     margin-block-start: 0em;
     margin-block-end: 0em;
     padding: 0.5em;
-  }
-
-  .suggeriti {
-    flex-grow: 1;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+    font-size: 0.6em;
   }
 
   .rightCont {
@@ -390,8 +402,8 @@
     width: 50%;
   }
 
-  .info a:hover{
-      color: blue;
+  .info a:hover {
+    color: blue;
   }
 
   /*What's behind*/
