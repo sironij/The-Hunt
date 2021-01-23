@@ -163,18 +163,10 @@ var modal = document.getElementById("myModal");
 //Funciton on click change content of img and redirect to different episode
 //var declaration for element to be filled with json/csv data
 
-    
-var prevEp = document.getElementById("previewEp")
 
 var prevGen = $(".preview");
+var eptitle =$(".fileName")
 
-var description = document.getElementById("contentDesc");
-var doc1 = document.getElementById("link1");
-var doc2 = document.getElementById("link2");
-var doc3 = document.getElementById("link3");
-var doc4 = document.getElementById("link4");
-var video = document.getElementById("video");
-var titoloEp = document.getElementById("titoloEp")
 
 
     
@@ -203,8 +195,15 @@ function alessio(a) {
     
 prevGen.click(function(){
     prova = $(this);
+    console.log("clic")
     alessio(prova);
-    prova.addClass(".preview-selected");
+    prevGen.removeClass("preview-selected");
+    eptitle.removeClass("fileName-selected");
+    var temp = "ep"+prova.attr('id')+"title"
+    console.log(temp)
+    $( "#ep"+prova.attr('id')+"title").addClass("fileName-selected");
+    prova.addClass("preview-selected");
+    
 })
 
 
