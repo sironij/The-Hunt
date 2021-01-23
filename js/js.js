@@ -157,6 +157,8 @@ var prev3 = document.getElementById("prev3");
 var prev4 = document.getElementById("prev4");
 var prev5 = document.getElementById("prev5");
 var prev6 = document.getElementById("prev6");
+var prev7 = document.getElementById("prev7");
+var prevEp = document.getElementById("previewEp")
 
 var description = document.getElementById("contentDesc");
 var doc1 = document.getElementsById("link1");
@@ -165,9 +167,9 @@ var doc3 = document.getElementsById("link3");
 var doc4 = document.getElementsById("link4");
 var video = document.getElementById("video");
 var titoloEp = docuemnt.getElementById("titoloEp")
+const episodi= $.getJSON("episodes.json");
 
-
-
+prev1.onclick()
 
 
 
