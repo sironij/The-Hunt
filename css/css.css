@@ -7,21 +7,31 @@
     background-size: cover;
   }
 
-  h2, p, h4,a{
+  h2, p, h4, a {
     font-family: "Inter";
+  }
 
+  p, a {
+    font-size: 0.8em;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
   }
 
   .docu {
     overflow: hidden;
   }
-.titoletto{
+
+  .titoletto {
     font-weight: 600;
-}
-#home-button img{
-    
+  }
+
+  #home-button img {
     width: 4.5em;
-}
+  }
+
   .menu-bar {
     position: fixed;
     display: flex;
@@ -372,6 +382,7 @@
 
   .wb-sidenav a {
     cursor: pointer;
+    text-decoration: none;
   }
 
   .wb-sidenav a:active {
@@ -385,9 +396,4 @@
 
   .wb-description {
     padding: 1.5em 3em 1.5em 3em;
-  }
-
-  .wb-description p{
-    font-family: "Inter";
-    font-size: 0.8em;
   }
