@@ -1,3 +1,14 @@
+const episodi = [
+{"titolo":"QANON DETECTION","episodio":"1","descrizione":"The episode starts with a brief presentation of Qanon and its presence on social media. The identification of a conspirative Instagram account will be the starting point of the research.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview1.png","linkvideo":"video/ep01.mp4"},
+{"titolo":"SAVE THE CHILDREN?","episodio":"2","descrizione":"The posts analysis of the profile previously found led to the identification of an unexpected truth: not all messages are harmless as it could seem.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview2.png","linkvideo":"video/ep02.mp4"},
+{"titolo":"A SHARING COMMUNITY","episodio":"3","descrizione":"The analysis goes on by focusing on the importance of content re-posting which allows the community to grow. This process brought to the identification of another interesting profile.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview3.png","linkvideo":"video/ep03.mp4"},
+{"titolo":"PLANDEMIC HIGHLIGHTS","episodio":"4","descrizione":"Instagram bans potentially dangerous posts, nevertheless some controversial contents are able to avoid the censorship: the highlights are an effective way to spread disinformation.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview4.png","linkvideo":"video/ep04.mp4"},
+{"titolo":"CURIOUS FOLLOWINGS","episodio":"5","descrizione":"In this episode the research is brought to the next level: by applying the method used so far, it is now easier to find many interconnected conspiracy theory related profiles.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview5.png","linkvideo":"video/ep05.mp4"},
+{"titolo":"VERIFIED CONSPIRACY THEORIES","episodio":"6","descrizione":"The research is deep inside the rabbithole: even some verified profiles share conspiracy theory related content. This is potentially dangerous.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview6.png","linkvideo":"video/ep06.mp4"},
+{"titolo":"THE REASON WHY","episodio":"7","descrizione":"In the extra episode we explain the reasons that prompted us _x000B_to do this research and why_x000B_it is important to analyze these phenomena.","link1":"","link2":"","link3":"","link4":"","link5":"","preview":"images/preview/preview7.png","linkvideo":"video/ep07.mp4"}
+]
+
+
 $(document).scroll(function() {
   $("#scroll").fadeOut("slow");
 });
@@ -151,14 +162,10 @@ var modal = document.getElementById("myModal");
 
 //Funciton on click change content of img and redirect to different episode
 //var declaration for element to be filled with json/csv data
-var prev1 = document.getElementById("prev1");
-var prev2 = document.getElementById("prev2");
-var prev3 = document.getElementById("prev3");
-var prev4 = document.getElementById("prev4");
-var prev5 = document.getElementById("prev5");
-var prev6 = document.getElementById("prev6");
-var prev7 = document.getElementById("prev7");
+
+    
 var prevEp = document.getElementById("previewEp")
+
 var prevGen = $(".preview");
 
 var description = document.getElementById("contentDesc");
@@ -169,24 +176,35 @@ var doc4 = document.getElementById("link4");
 var video = document.getElementById("video");
 var titoloEp = document.getElementById("titoloEp")
 
-const episodi= $.getJSON("episodes.json");
-//const obj = JSON.parse(episodi)
+
     
 prevGen.mouseover(function(){
     prevGen.css("cursor"," pointer");
+    
                   });
     
     
 function alessio(a) {
-       var prev = a.attr('id');
-    var test =  $("#prev1").attr("id");
-       console.log("prev "+prev + "test "+ test);
-    }
+    var prev = a.attr('id');
+   
+  var paolo = episodi[prev];    
+    $("#contentDesc").text(paolo.descrizione);
+    console.log(prev)
+     $("#titoloEp").text(paolo.titolo);
+    $("#previewEP").attr("src",paolo.preview);;
+    
+       
+    //})
+}
+        
+   
+
     
     
 prevGen.click(function(){
     prova = $(this);
     alessio(prova);
+    prova.addClass(".preview-selected");
 })
 
 
