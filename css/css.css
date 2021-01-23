@@ -58,6 +58,7 @@
 
   .sticky img {
     max-height: 90vh;
+    max-width: 80vw;
     filter: brightness(90%);
   }
 
@@ -246,6 +247,7 @@
 
   #home_13 {
     top: 15%;
+    left: 45%;
   }
 
   #home_14 {

@@ -35,15 +35,15 @@ if ('scrollRestoration' in history) {
   }(jQuery, window));
 
   $("#alert_active").inViewport(function(px) {
-    if (px) $(".alert_container").fadeIn();
+    if (px) $(".alert_container").fadeIn("slow");
   });
 
   $("#alert_active2").inViewport(function(px) {
-    if (px) $(".alert_container2").fadeIn();
+    if (px) $(".alert_container2").fadeIn("slow");
   });
 
   $("#alert_active3").inViewport(function(px) {
-    if (px) $(".alert_container3").fadeIn();
+    if (px) $(".alert_container3").fadeIn("slow");
   });
 
 
