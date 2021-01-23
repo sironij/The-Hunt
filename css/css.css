@@ -390,6 +390,10 @@
     width: 50%;
   }
 
+  .info a:hover{
+      color: blue;
+  }
+
   /*What's behind*/
   #wb-leftCont {
     width: 30%;
