@@ -87,7 +87,7 @@ if ('scrollRestoration' in history) {
 
   // reactivate scroll
 
-  $(".alert_btn").click(function() {
+  $("#alert1_btn").click(function() {
     $("html").removeClass("lockScroll");
     $(".menu-bar").removeClass("unfocused");
     $(".container").removeClass("unfocused");
@@ -97,7 +97,7 @@ if ('scrollRestoration' in history) {
     $("#alert_active").hide();
   });
 
-  $(".alert_btn2").click(function() {
+  $("#alert2_btn").click(function() {
     $("html").removeClass("lockScroll");
     $(".menu-bar").removeClass("unfocused");
     $(".container").removeClass("unfocused");
@@ -107,7 +107,7 @@ if ('scrollRestoration' in history) {
     $("#alert_active2").hide();
   });
 
-  $(".alert_btn3").click(function() {
+  $("#alert3_btn").click(function() {
     $("html").removeClass("lockScroll");
     $(".menu-bar").removeClass("unfocused");
     $(".container").removeClass("unfocused");

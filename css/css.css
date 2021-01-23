@@ -58,10 +58,11 @@
 
   .sticky img {
     max-height: 90vh;
+    filter: brightness(90%);
   }
 
   .sticky img:hover {
-    transform: scale(1.1)
+    filter: brightness(100%);
   }
 
   #title {
@@ -123,6 +124,11 @@
   }
 
   #separator {
+    height: 10vh;
+    width: 100vw;
+  }
+
+  #bottom {
     height: 50vh;
     width: 100vw;
   }
@@ -137,6 +143,7 @@
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
+    pointer-events: none;
   }
 
   .alert_container {
@@ -170,26 +177,19 @@
 
   .alert_btn {
     position: absolute;
-    top: 38%;
-    left: 50%;
+    top: 35%;
+    left: 60%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    opacity: 60%;
   }
 
-  .alert_btn2 {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+  .alert_btn img{
+    margin-bottom: 0 !important;
   }
 
-  .alert_btn3 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+  .alert_btn:hover{
+    opacity: 100%;
   }
 
   #home_1 {
