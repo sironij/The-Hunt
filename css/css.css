@@ -324,6 +324,10 @@
     width: 80%;
   }
 
+  #coverEp {
+    width: 40%
+  }
+
   .videocontainer {
     margin: 1.5em;
     flex-grow: 6;
@@ -345,6 +349,7 @@
   .suggeriti {
     flex-grow: 1;
     margin-left: 1.5em;
+    margin-right: 1.5em;
     display: flex;
     flex-direction: row;
   }
@@ -362,15 +367,11 @@
     width: 20%;
   }
 
-  #coverEp {
-    width: 40%
-  }
+
 
   #previewEP {
     width: 50%;
   }
-
-
 
   /*What's behind*/
   #wb-leftCont {
