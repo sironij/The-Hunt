@@ -7,7 +7,7 @@
     background-size: cover;
   }
 
-  h2{
+  h2, p, h4,a{
     font-family: "Inter";
 
   }
@@ -15,7 +15,9 @@
   .docu {
     overflow: hidden;
   }
-
+.titoletto{
+    font-weight: 900;
+}
 #home-button img{
     
     width: 4.5em;
