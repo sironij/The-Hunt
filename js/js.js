@@ -181,10 +181,14 @@ function alessio(a) {
    
   var paolo = episodi[prev];    
     $("#contentDesc").text(paolo.descrizione);
-    console.log(prev)
-     $("#titoloEp").text(paolo.titolo);
+    $("#titoloEp").text(paolo.titolo);
     $("#previewEP").attr("src",paolo.preview);
-    $("#video").attr("src",paolo.linkvideo)
+    $("#video").attr("src",paolo.linkvideo);
+    $("#link1").attr("src",paolo.link1);
+    $("#link2").attr("src",paolo.link2);
+    $("#link3").attr("src",paolo.link3);
+    $("#link4").attr("src",paolo.link4);
+    
        
     //})
 }
