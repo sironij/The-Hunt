@@ -11,6 +11,11 @@
     font-family: "Inter";
   }
 
+#theHunt{
+    top: 20%;
+    position: relative;
+}
+
   p, a {
     font-size: 0.8em;
   }
@@ -332,7 +337,7 @@
 /*    flex-grow: 6;  commentato perché sto facendo experiments*/ 
   }
 
-  .videocontainer iframe {
+  .videocontainer video {
     border-radius: .5em;
     border-style: none;
   }
