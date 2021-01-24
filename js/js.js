@@ -183,8 +183,8 @@ function alessio(a) {
     $("#contentDesc").text(paolo.descrizione);
     console.log(prev)
      $("#titoloEp").text(paolo.titolo);
-    $("#previewEP").attr("src",paolo.preview);;
-    
+    $("#previewEP").attr("src",paolo.preview);
+    $("#video").attr("src",paolo.linkvideo)
        
     //})
 }
@@ -203,6 +203,7 @@ prevGen.click(function(){
     console.log(temp)
     $( "#ep"+prova.attr('id')+"title").addClass("fileName-selected");
     prova.addClass("preview-selected");
+    
     
 })
 
