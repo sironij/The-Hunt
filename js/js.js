@@ -177,44 +177,144 @@ prevGen.mouseover(function(){
     
     
 function alessio(a) {
-    var prev = a.attr('id');
-   
+  var prev = a;
   var paolo = episodi[prev];    
     $("#contentDesc").text(paolo.descrizione);
     $("#titoloEp").text(paolo.titolo);
     $("#previewEP").attr("src",paolo.preview);
     $("#video").attr("src",paolo.linkvideo);
-    $("#link1").attr("src",paolo.link1);
-    $("#link2").attr("src",paolo.link2);
-    $("#link3").attr("src",paolo.link3);
-    $("#link4").attr("src",paolo.link4);
-    
-       
-    //})
-}
+    $("#link1").attr("href",paolo.link1);
+    $("#link2").attr("href",paolo.link2);
+    $("#link3").attr("href",paolo.link3);
+    $("#link4").attr("href",paolo.link4);
+    }
         
    
-
+function filler (prova){
+    prevGen.removeClass("preview-selected");
+    eptitle.removeClass("fileName-selected");
+    var temp = "ep"+prova+"title"
+    $( "#ep"+prova+"title").addClass("fileName-selected");
+    $('#'+prova).addClass("preview-selected");
+}
     
     
 prevGen.click(function(){
-    prova = $(this);
-    console.log("clic")
+    prova = $(this).attr('id');
     alessio(prova);
-    prevGen.removeClass("preview-selected");
-    eptitle.removeClass("fileName-selected");
-    var temp = "ep"+prova.attr('id')+"title"
-    console.log(temp)
-    $( "#ep"+prova.attr('id')+"title").addClass("fileName-selected");
-    prova.addClass("preview-selected");
+    filler(prova);
+    $("#parent").css("display", "none");
+    $("#video").css("display", "block");
+    $('#video').attr('controls',"")
+    if (temp!=0){
+        $("#parent").empty()
+    }
+    
+    })
+
     
     
-})
+    //---- here what happen when the video ends
+    
+    
+//     $( "#myVideo4" ).click(function() {
+//    video4.style.display = "block";
+//      video4.play();
+//  });
+//
+ 
+//var parent = document.createElement("div");
+//var paragrafo = document.createElement("p");
+//var txtReload = document.createElement("p");
+//var txtNext = document.createElement("p");
+//var carlo = document.createElement("div")
+//var rossana = document.createElement("div")
+//var toDisc = document.createElement("a")
+var prova = 0;
 
 
+var temp = 0;
+  $("#video").on('ended', function(e) {
+      
+    $('#video').hide();
+      if (temp ==0){
+    $(".videocontainer").append("<div id='parent' class='endMessage'></div>" );
+          temp= temp+1
+  }
+      else {
+           $("#parent").css("display", "block")
+          
+      }
+      if (prova < 6){
+          console.log("if<7 "+prova)
+          
+        $("#parent").css("display", "block")
+      $("#parent").append("<p>You're going down the rabbit hole, wanna see what's next?</p><div id='carlo' class='avanti'><p id='txtNext'>Next episode</p></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
+      $("#carlo").click(function(){
+    $("#video").css("display", "block");     
+    $('#video').attr('controls',"");
+          var cont = parseInt(prova) + 1;
+          console.log("if<7 pre ale e fil " + prova )
+          console.log("invece " + cont)
+          alessio(cont);
+          filler(cont);
+          prova = cont;
+          $("#parent").css("display", "none");
+          $("#parent").empty();
+          console.log("if<7 aaa " + prova)
+           
+      });
+      $("#rossana").click(function(){
+          console.log(prova)
+             $("#parent").css("display", "none");
+          $("#parent").empty()
+                $("#video").css("display", "block");
+                $('#video').attr('controls',"")
+            $("#video").currentTime = 0;
+            $("#video")[0].play();
+         
+        $("#parent").empty();
+  
+        });
+      }
+      else if (prova = 7){
+          console.log("if=7"+prova)
+       $("#parent").css("display", "block")
+       $("#parent").append("<p>Your white tail is now deep in the conspiracy theories, read our disclosure to understand our research.</p><div id='carlo' class='avanti'><a id='toDisc' href='whatsbehind.html'>Disclosure</a></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
+       $("#rossana").click(function(){
+        $("#parent").css("display", "none");
+           $("#parent").empty()
+        $("#video").css("display", "block");
+           $('#video').attr('controls',"")
+            $("#video").currentTime = 0;
+            $("#video")[0].play();
+            $("#parent").empty();
 
-// Get the <span> element that closes the modal //
-// var span = document.getElementsByClassName("spegni")[0];
+        });
+          }
+     
+     
+    
+      
+  })});
+//      
+//      
+//      
+//   
+    
+  
+  
+
+//control bar
+$('#video').on('ended', function() {
+      $('#video').removeAttr('controls');
+    });
+    
+    
+    
+    
+    //------End of video events
+
 
 
 //--------Marco Js End
@@ -222,4 +322,4 @@ prevGen.click(function(){
 
 
 
-});
+;

@@ -342,6 +342,12 @@
     border-style: none;
   }
 
+.endMessage{
+      border-radius: .5em;
+    border-style: none;
+    
+}
+
   .suggeriti {
     flex-grow: 1;
     margin-left: 1.5em;
