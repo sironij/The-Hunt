@@ -447,10 +447,12 @@
 
   .wb-sidenav {
     margin-top: 20%;
-  }
 
+  }
+#parent {
+  display: content;
+}
   .wb-sidenav li {
-    font-family: 'sf_pro_textregular';
     list-style-type: none;
     padding-bottom: 1em;
   }
@@ -460,8 +462,8 @@
     text-decoration: none;
   }
 
-  .wb-sidenav a:active {
-    font-weight: bold;
+  .wb-sidenav_selected{
+    font-family: 'sf_pro_textbold';
   }
 
   #wb-rightCont {
@@ -470,5 +472,11 @@
   }
 
   .wb-description {
-    padding: 1.5em 3em 1.5em 3em;
+    padding: 1.5em 3em 0.5em 3em;
+  }
+
+  .wb-documentation {
+    margin-top: 2em;
+    display: flex;
+    text-align: center;
   }

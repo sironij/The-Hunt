@@ -22,16 +22,16 @@ var eptitle =$(".fileName")
 
 
 
-    
+
 prevGen.mouseover(function(){
     prevGen.css("cursor"," pointer");
-    
+
                   });
-    
-    
+
+
 function alessio(a) {
   var prev = a;
-  var paolo = episodi[prev];    
+  var paolo = episodi[prev];
     $("#contentDesc").text(paolo.descrizione);
     $("#titoloEp").text(paolo.titolo);
     $("#previewEP").attr("src",paolo.preview);
@@ -41,8 +41,8 @@ function alessio(a) {
     $("#link3").attr("href",paolo.link3);
     $("#link4").attr("href",paolo.link4);
     }
-        
-   
+
+
 function filler (prova){
     prevGen.removeClass("preview-selected");
     eptitle.removeClass("fileName-selected");
@@ -50,8 +50,8 @@ function filler (prova){
     $( "#ep"+prova+"title").addClass("fileName-selected");
     $('#'+prova).addClass("preview-selected");
 }
-    
-    
+
+
 prevGen.click(function(){
     prova = $(this).attr('id');
     alessio(prova);
@@ -62,20 +62,20 @@ prevGen.click(function(){
     if (temp!=0){
         $("#parent").empty()
     }
-    
+
     })
 
-    
-    
+
+
     //---- here what happen when the video ends
-    
-    
+
+
 //     $( "#myVideo4" ).click(function() {
 //    video4.style.display = "block";
 //      video4.play();
 //  });
 //
- 
+
 //var parent = document.createElement("div");
 //var paragrafo = document.createElement("p");
 //var txtReload = document.createElement("p");
@@ -88,7 +88,7 @@ var prova = 0;
 
 var temp = 0;
   $("#video").on('ended', function(e) {
-      
+
     $('#video').hide();
       if (temp ==0){
     $(".videocontainer").append("<div id='parent' class='endMessage'></div>" );
@@ -96,15 +96,15 @@ var temp = 0;
   }
       else {
            $("#parent").css("display", "block")
-          
+
       }
       if (prova < 6){
           console.log("if<7 "+prova)
-          
+
         $("#parent").css("display", "block")
       $("#parent").append("<p>You're going down the rabbit hole, wanna see what's next?</p><div id='carlo' class='avanti'><p id='txtNext'>Next episode</p></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
       $("#carlo").click(function(){
-    $("#video").css("display", "block");     
+    $("#video").css("display", "block");
     $('#video').attr('controls',"");
           var cont = parseInt(prova) + 1;
           console.log("if<7 pre ale e fil " + prova )
@@ -115,7 +115,7 @@ var temp = 0;
           $("#parent").css("display", "none");
           $("#parent").empty();
           console.log("if<7 aaa " + prova)
-           
+
       });
       $("#rossana").click(function(){
           console.log(prova)
@@ -125,9 +125,9 @@ var temp = 0;
                 $('#video').attr('controls',"")
             $("#video").currentTime = 0;
             $("#video")[0].play();
-         
+
         $("#parent").empty();
-  
+
         });
       }
       else if (prova = 7){
@@ -144,28 +144,28 @@ var temp = 0;
             $("#parent").empty();
 
         });
-          }
-     
-     
-    
-      
+      })
+
+
+
+
   })});
-//      
-//      
-//      
-//   
-    
-  
-  
+//
+//
+//
+//
+
+
+
 
 //control bar
 $('#video').on('ended', function() {
       $('#video').removeAttr('controls');
     });
-    
-    
-    
-    
+
+
+
+
     //------End of video events
 
 
