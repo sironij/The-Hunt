@@ -18,12 +18,12 @@ uniform vec2 resolution;
 
 void main( void ) {
 
-	vec2 uv = ( gl_FragCoord.xy-90.10* resolution.xy )/resolution.y-55.1 ;
+	vec2 uv = ( gl_FragCoord.xy-90.90* resolution.xy )/resolution.y-56.1 ;
 
 	float c = S(X/45.+Y/25.)*S(X/50.+t+S(0.1*t+Y/15.));
 	float d = C(X/25.+Y/55.)*C(X/50.+t+S(0.1*t+Y/15.));
 
-	gl_FragColor = vec4( vec3( 1., 0.95-c, 0.95-d), 0.7 );
+	gl_FragColor = vec4( vec3( 1., 0.95-c, 0.95-d), 0.75 );
 
 
 

@@ -1,8 +1,10 @@
   body, html {
+
 /*
-       background:rgba(250,160,90,0.15);
-      mix-blend-mode: normal;
+       background:rgba(250,140,90,0.15);
+      mix-blend-mode: multiply;
 */
+
     margin: 0;
 /*    background-image: url("homeBack.png");*/
 /*
