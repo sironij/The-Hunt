@@ -384,7 +384,7 @@
   .preview {
     position: relative;
     padding: 10% 5% 10% 5%;
-    height: 25%;
+
     border-radius: 2.5px;
     margin-left: 4px;
     margin-right: 4px;
@@ -460,6 +460,7 @@
   .wb-sidenav a {
     cursor: pointer;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .wb-sidenav_selected{
@@ -477,6 +478,7 @@
 
   .wb-documentation {
     margin-top: 2em;
+    margin-bottom: 1em;
     display: flex;
     text-align: center;
   }
