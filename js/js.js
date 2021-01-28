@@ -128,6 +128,13 @@ $("a").click(function() {
   $('a').not(this).removeClass("wb-sidenav_selected");
 });
 
+// preview selection
+
+$("a").click(function() {
+  $(this).addClass("wb-sidenav_selected");
+  $('a').not(this).removeClass("wb-sidenav_selected");
+});
+
 // 3D effect finestre -> da valutare
 //  $('html').mousemove(function(e) {
 //
