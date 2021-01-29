@@ -3,9 +3,7 @@
 
 <head>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -47,13 +45,13 @@
         <div id="wb-mySidenav" class="wb-sidenav">
 
           <ul>
-            <li><a>The Project</a></li>
-            <li><a>Message</a></li>
-            <li><a>Goals and Audience</a></li>
-            <li><a>Methods</a></li>
-            <li><a>Episodes</a></li>
-            <li><a>Policy</a></li>
-            <li><a>Credits</a></li>
+            <li><a class="wb-el">The Project</a></li>
+            <li><a class="wb-el">Message</a></li>
+            <li><a class="wb-el">Goals and Audience</a></li>
+            <li><a class="wb-el">Methods</a></li>
+            <li><a class="wb-el">Episodes</a></li>
+            <li><a class="wb-el">Policy</a></li>
+            <li><a class="wb-el">Credits</a></li>
           </ul>
 
         </div>
@@ -62,8 +60,8 @@
       <div class="rightCont" id="wb-rightCont">
         <div class="wb-description">
 
-          <h2>The Project</h2>
-          <p>The Hunt” is a project developed during the Final Synthesis Lab of Communication Design MSc at Politecnico di Milano: it consists in a [desktop documentary] of a research regarding conspiracy theories’-related content spread by Instagram
+          <h2 id="wb-title">The Project</h2>
+          <p id="wb-txt">The Hunt” is a project developed during the Final Synthesis Lab of Communication Design MSc at Politecnico di Milano: it consists in a [desktop documentary] of a research regarding conspiracy theories’-related content spread by Instagram
             accounts.<br><br>
 
             The project is an extension of previous Phase 2 of the Lab [VizP1], during which our team investigated the aesthetics of conspiracy theories on digital platforms. For this project we have considered in particular the Protocol 1, in which
@@ -144,9 +142,10 @@
       </div>
     </div>
   </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
-  <script src="js/js.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -154,6 +153,7 @@
   <script src="p5/p5.min.js"></script>
   <script src="p5/p5.sound.min.js"></script>
   <script src="p5/sketch.js"></script>
+    <script src="js/wb.js"></script>
 
 </body>
 
