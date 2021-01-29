@@ -480,14 +480,14 @@
     text-align: center;
   }
 
-  #file-window1 {
+  #fileModal {
     display: none;
     position: absolute;
     z-index: 10;
     cursor: pointer;
   }
 
-#file-window1 img {
+#fileModal img {
   height: 50%;
   width: 50%;
 }
