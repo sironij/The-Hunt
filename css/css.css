@@ -13,6 +13,101 @@
 */
   }
 
+  .a, .b, .c {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 8px;
+
+  position: absolute;
+}
+
+.a, .c {
+  stroke-linecap: square;
+}
+
+.hover{
+  visibility: hidden;
+  display: none;
+}
+
+.eyeext{
+  position:absolute;
+
+
+  border-radius:50%;
+
+  left:5%;
+  margin-left:0;
+  top:0%;
+  margin-top:0;
+  width:4em;
+  height:4em;
+  top:50%;
+
+}
+.eye{
+
+    position:absolute;
+
+    top:29%;
+    left:10%;
+width:80%;
+  height:42%;
+  border-radius:50%;
+/* background-color: blue;
+opacity: 20%; */
+  overflow: hidden;
+
+
+
+}
+.pupil{
+
+
+}
+
+
+#p0{
+  border: 0.04em solid white;
+  width:29%;
+  height: 56%;
+  border-radius:50%;
+  position:absolute;
+  left:37%;
+  top:12%;}
+
+#p1{
+  border: 0.04em solid white;
+  width:36%;
+  height: 68%;
+  border-radius:50%;
+  position:absolute;
+  left:33.5%;
+  top:6%;
+
+
+}
+#p2{
+  border: 0.18em solid white;
+  width:43%;
+  height: 80%;
+  border-radius:50%;
+  position:absolute;
+  left:30%;
+  top:0%;
+}
+
+#p3{
+  background-color: white;
+  width:22%;
+  height: 43%;
+  border-radius:50%;
+  position:absolute;
+  left:42.5%;
+  top:22%;
+}
+
   #myContainer {
     position: fixed !important;
     z-index: -100;
@@ -44,8 +139,8 @@
     font-weight: 600;
   }
 
-  #home-button img {
-    width: 4.5em;
+  #home-button {
+    cursor: pointer;
   }
 
   .menu-bar {
@@ -70,10 +165,6 @@
     text-transform: uppercase;
     padding-right: 2em;
     text-decoration: none;
-    text-shadow: 0px 3px 5px rgba(250, 50, 150, 0.6);
-  }
-
-  .home-button img {
     text-shadow: 0px 3px 5px rgba(250, 50, 150, 0.6);
   }
 
