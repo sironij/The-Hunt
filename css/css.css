@@ -13,7 +13,7 @@
 */
   }
 
-  .a, .b, .c {
+ .c {
   fill: none;
   stroke: #fff;
   stroke-miterlimit: 10;
@@ -21,6 +21,15 @@
 
   position: absolute;
 }
+.b,.a{
+      fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 8px;
+
+  position: absolute;
+}
+
 
 .a, .c {
   stroke-linecap: square;
@@ -37,7 +46,7 @@
 
   border-radius:50%;
 
-  left:5%;
+  left:0%;
   margin-left:0;
   top:0%;
   margin-top:0;
@@ -51,7 +60,7 @@
     position:absolute;
 
     top:29%;
-    left:10%;
+    left:50%;
 width:80%;
   height:42%;
   border-radius:50%;
@@ -64,12 +73,12 @@ opacity: 20%; */
 }
 .pupil{
 
-
+border: 0.04em solid black;
 }
 
 
 #p0{
-  border: 0.04em solid white;
+ 
   width:29%;
   height: 56%;
   border-radius:50%;
@@ -78,7 +87,7 @@ opacity: 20%; */
   top:12%;}
 
 #p1{
-  border: 0.04em solid white;
+  
   width:36%;
   height: 68%;
   border-radius:50%;
@@ -89,7 +98,7 @@ opacity: 20%; */
 
 }
 #p2{
-  border: 0.18em solid white;
+
   width:43%;
   height: 80%;
   border-radius:50%;
@@ -99,13 +108,13 @@ opacity: 20%; */
 }
 
 #p3{
-  background-color: white;
-  width:22%;
-  height: 43%;
-  border-radius:50%;
-  position:absolute;
-  left:42.5%;
-  top:22%;
+background-color: black;
+    width: 27%;
+    height: 53%;
+    border-radius: 50%;
+    position: absolute;
+    left: 39.5%;
+    top: 17%
 }
 
   #myContainer {
