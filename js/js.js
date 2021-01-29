@@ -3,7 +3,6 @@ $(document).scroll(function() {
 });
 
 
-
 // prevent refresh
 
 $(window).on('unload', function() {

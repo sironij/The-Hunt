@@ -31,6 +31,7 @@ var modal = document.getElementById("myModal");
 
 
 
+
 prevGen.mouseover(function(){
     prevGen.css("cursor"," pointer");
 
@@ -163,7 +164,7 @@ prevGen.click(function(){
 
 
 
-  
+
 //
 //
 //
