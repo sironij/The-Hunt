@@ -48,7 +48,7 @@ $(".wb-el").click(function(){
 //});
 
 $(".preview").click(function() {
-  $("#file-window1").fadeIn()
+  $("#fileModal").fadeIn()
 });
 
 //Make the DIV element draggagle:
