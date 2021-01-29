@@ -133,7 +133,7 @@ $(".preview").click(function() {
 });
 
 //Make the DIV element draggagle:
-dragElement(document.getElementById("file-window1"));
+dragElement(document.getElementById("fileModal"));
 
 function dragElement(elmnt) {
   var pos1 = 0,
