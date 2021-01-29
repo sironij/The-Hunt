@@ -39,11 +39,11 @@ function alessio(a) {
     $("#contentDesc").text(paolo.descrizione);
     $("#titoloEp").text(paolo.titolo);
     $("#previewEP").attr("src",paolo.preview);
-    $("#video").attr(paolo.linkvideo);
-    $("#link1").attr(paolo.link1);
-    $("#link2").attr(paolo.link2);
-    $("#link3").attr(paolo.link3);
-    $("#link4").attr(paolo.link4);
+    $("#video").attr("src",paolo.linkvideo);
+    $("#link1").attr("href",paolo.link1);
+    $("#link2").attr("href",paolo.link2);
+    $("#link3").attr("href",paolo.link3);
+    $("#link4").attr("href",paolo.link4);
     $("#link1").text(paolo.linktitle1);
     $("#link2").text(paolo.linktitle2);
     $("#link3").text(paolo.linktitle3);
