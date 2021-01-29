@@ -51,6 +51,10 @@ $(".preview").click(function() {
   $("#fileModal").fadeIn()
 });
 
+$(".close").click(function() {
+  $("#fileModal").fadeOut()
+});
+
 //Make the DIV element draggagle:
 //dragElement(document.getElementById("file-window1"));
 $("#fileModal").draggable();
