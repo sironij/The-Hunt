@@ -478,14 +478,24 @@
     text-align: center;
   }
 
+  .close {
+    padding: 0.3em;
+  }
+
   #fileModal {
     display: none;
     position: absolute;
     z-index: 10;
+    width: 30%;
     cursor: pointer;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 1em;
   }
 
-#fileModal img {
-  height: 50%;
-  width: 50%;
+#file-window1 img {
+  padding: 0.3em;
+  border-radius: 1em;
+  max-height: 100%;
+  max-width: 97%;
 }
