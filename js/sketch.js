@@ -72,7 +72,7 @@ var handleMouseMove = function (event) {
   output.y.current = output.y.start + (input.mouseY.fraction * output.y.range);
 
   // apply output to html
-  var a = 0.35 // pupilla
+  var a = 0.4 // pupilla
   var b = 0.25 //secondo
   var s = 0.35 // dimensione pupilla 3
   var t = 0.15  // più grande 1
