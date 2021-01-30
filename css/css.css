@@ -511,6 +511,8 @@ opacity: 20%; */
 
   #e-rightCont {
     width: 20%;
+    height: 65vh;
+    overflow: scroll;
   }
 
   #previewEP {
@@ -530,21 +532,27 @@ opacity: 20%; */
     background-color: green;
   }
 
-  .endMessage h3 {
-    font-family: 'sf_pro_textbold';
+  .endMessage p, h3 {
+    font-family: 'sf_pro_textregular';
+    color: white;
   }
 
   #parent-pulsanti{
     display: flex;
     flex-direction: row;
     margin top: 1em;
+    justify-content: space-between;
   }
 
 .parent-bottone {
   padding: 1em;
   border: 1px solid black;
+  border-radius: 0.5em;
 }
 
+#carlo {
+  background-color: #1874EA;
+}
 
   /*What's behind*/
   #wb-leftCont {
