@@ -63,7 +63,7 @@
 width:80%;
   height:42%;
   border-radius:50%;
-/* background-color: blue;
+/* background-color: #0063E1;
 opacity: 20%; */
   overflow: hidden;
 mix-blend-mode: invert;
@@ -503,7 +503,7 @@ border: 0.04em solid #f0f0f0 ;
   }
 
   .fileName-selected {
-    background-color: blue;
+    background-color: #0063E1;
     color: white;
   }
 
@@ -532,7 +532,7 @@ border: 0.04em solid #f0f0f0 ;
   }
 
   .info a:hover {
-    color: blue;
+    color: #0063E1;
   }
 
   #parent {
@@ -547,7 +547,7 @@ border: 0.04em solid #f0f0f0 ;
   }
 
   .sfocatone {
-    filter:blur();
+    filter:blur(10px);
   }
 
   /*What's behind*/

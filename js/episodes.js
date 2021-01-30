@@ -136,7 +136,7 @@ prevGen.click(function(){
           console.log(prova)
              $("#parent").css("display", "none");
           $("#parent").empty()
-                $("#video").removeClass(".sfocatone"));
+                $("#video").removeClass(".sfocatone");
                 $('#video').attr('controls',"")
             $("#video").currentTime = 0;
             $("#video")[0].play();
