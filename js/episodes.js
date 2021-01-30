@@ -15,7 +15,7 @@ const episodi = [
 var prova = 0;
 var temp = 0;
 var paolino
-var prevGen = $(".preview");
+var prevGen = $(".lucianino");
 var eptitle =$(".fileName")
 
 start()
@@ -62,11 +62,11 @@ function alessio(a) {
 
 
 function filler (prova){
-    prevGen.removeClass("preview-selected");
+     $('.preview').removeClass("preview-selected");
     eptitle.removeClass("fileName-selected");
     var temp = "ep"+prova+"title"
     $( "#ep"+prova+"title").addClass("fileName-selected");
-    $('#'+prova).addClass("preview-selected");
+    $('#'+prova+'prev').addClass("preview-selected");
 }
 
 
