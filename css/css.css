@@ -13,108 +13,97 @@
 */
   }
 
- .c {
-  fill: none;
-  stroke: #f0f0f0;
-  stroke-miterlimit: 10;
-  stroke-width: 8px;
-  position: absolute;
-}
-.b,.a{
-      fill: none;
-  stroke: #f0f0f0;
-  stroke-miterlimit: 10;
-  stroke-width: 8px;
+  .c {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-miterlimit: 10;
+    stroke-width: 8px;
     position: absolute;
-}
+  }
 
+  .b, .a {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-miterlimit: 10;
+    stroke-width: 8px;
+    position: absolute;
+  }
 
-.a, .c {
-  stroke-linecap: square;
-}
+  .a, .c {
+    stroke-linecap: square;
+  }
 
-.hover{
-  visibility: hidden;
-  display: none;
-}
+  .hover {
+    visibility: hidden;
+    display: none;
+  }
 
-.eyeext{
-  position:absolute;
+  .eyeext {
+    position: absolute;
+    border-radius: 50%;
+    left: 1%;
+    margin-left: 0;
+    top: 0%;
+    margin-top: 0;
+    width: 4em;
+    height: 4em;
+    top: 25%;
+  }
 
-
-  border-radius:50%;
-
-  left:1%;
-  margin-left:0;
-  top:0%;
-  margin-top:0;
-  width:4em;
-  height:4em;
-  top:25%;
-
-}
-.eye{
-
-
-    position:absolute;
-
-    top:29%;
-    left:9.5%;
-width:80%;
-  height:42%;
-  border-radius:50%;
-/* background-color: #0063E1;
+  .eye {
+    position: absolute;
+    top: 29%;
+    left: 9.5%;
+    width: 80%;
+    height: 42%;
+    border-radius: 50%;
+    /* background-color: #0063E1;
 opacity: 20%; */
-  overflow: hidden;
-mix-blend-mode: invert;
-
-
-}
-.pupil{
-
-border: 0.04em solid #f0f0f0 ;
+    overflow: hidden;
     mix-blend-mode: invert;
-}
+  }
 
+  .pupil {
+    border: 0.04em solid #f0f0f0;
+    mix-blend-mode: invert;
+  }
 
-#p0{
+  #p0 {
+    width: 29%;
+    height: 56%;
+    border-radius: 50%;
+    position: absolute;
+    left: 37%;
+    top: 12%;
+  }
 
-  width:29%;
-  height: 56%;
-  border-radius:50%;
-  position:absolute;
-  left:37%;
-  top:12%;}
+  #p1 {
+    width: 36%;
+    height: 68%;
+    border-radius: 50%;
+    position: absolute;
+    left: 33.5%;
+    top: 6%;
+  }
 
-#p1{
+  #p2 {
+    width: 43%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    left: 28%;
+    top: 3%;
+  }
 
-  width:36%;
-  height: 68%;
-  border-radius:50%;
-  position:absolute;
-  left:33.5%;
-  top:6%;
-
-}
-#p2{
-
-  width:43%;
-  height: 80%;
-  border-radius:50%;
-  position:absolute;
-  left:28%;
-  top:3%;
-}
-
-#p3{
-   background-color: #f0f0f0;
+  #p3 {
+    background-color: #f0f0f0;
     width: 22%;
     height: 42%;
     border-radius: 50%;
     position: absolute;
     left: 40.5%;
     top: 17%;
-}
+  }
 
   #myContainer {
     position: fixed !important;
@@ -452,17 +441,14 @@ border: 0.04em solid #f0f0f0 ;
   }
 
   .videocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1.5em;
-      margin-bottom: 0.5em;
-    /*    flex-grow: 6;  commentato perché sto facendo experiments*/
+    margin-bottom: 0.5em;
   }
 
   .videocontainer video {
-    border-radius: .5em;
-    border-style: none;
-  }
-
-  .endMessage {
     border-radius: .5em;
     border-style: none;
   }
@@ -474,8 +460,8 @@ border: 0.04em solid #f0f0f0 ;
     display: flex;
     flex-direction: row;
     text-align: center;
-      margin-bottom: 1.5em;
-/*    overflow: scroll;*/
+    margin-bottom: 1.5em;
+    /*    overflow: scroll;*/
   }
 
   .preview {
@@ -535,19 +521,26 @@ border: 0.04em solid #f0f0f0 ;
     color: #0063E1;
   }
 
-  #parent {
+  .endMessage {
+    border-radius: .5em;
+    border-style: none;
     position: absolute;
-    
     padding: 1em;
-    margin: 1.5em;
-      margin-bottom: 0.5em;
-
+    margin: 5em;
     background-color: red;
   }
 
-  .sfocatone {
-    filter:blur(10px);
+  .endMessage h3 {
+    font-family: 'sf_pro_textbold';
+    color:white;
   }
+
+  #parent-pulsanti{
+    display: flex;
+    flex-direction: row;
+  }
+
+
 
   /*What's behind*/
   #wb-leftCont {
@@ -594,10 +587,7 @@ border: 0.04em solid #f0f0f0 ;
     padding: 0.5em 0 0 0.5em;
   }
 
-  .close img{
-  }
-
-
+  .close img {}
 
   #fileModal {
     display: none;
@@ -610,10 +600,10 @@ border: 0.04em solid #f0f0f0 ;
     border-radius: 1em;
   }
 
-#file-window1 img {
-  padding: 0 0.3em 0.3em 0.3em;
-  border-radius: 1em;
-  max-height: 100%;
-  max-width: 97%;
-  opacity: 100% !important;
-}
+  #file-window1 img {
+    padding: 0 0.3em 0.3em 0.3em;
+    border-radius: 1em;
+    max-height: 100%;
+    max-width: 97%;
+    opacity: 100% !important;
+  }

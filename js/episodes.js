@@ -105,7 +105,7 @@ prevGen.click(function(){
 
   $("#video").on('ended', function(e) {
 
-    $('#video').css("filter","blur(10px)");
+    $('#video').css("filter","blur(5px)");
       if (temp ==0){
     $(".videocontainer").append("<div id='parent' class='endMessage'></div>" );
           temp= temp+1
