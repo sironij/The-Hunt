@@ -1,5 +1,5 @@
 const sezioni = [
-{"titolo":"The Project","descrizione":"The Hunt is a project developed during the Final Synthesis Lab of Communication Design MSc at Politecnico di Milano: it consists in a series of episodes of a research regarding conspiracy theories’-related content spread by Instagram accounts.The project is an extension of previous Phase 2 of the Lab, during which our team investigated the aesthetics of conspiracy theories on digital platforms. For this project we have considered in particular the Protocol 1, in which we analyzed the activity of some Instagram influencers who spread conspiracy theories’ messages using visual languages often characterized by fancy typography and muted, pastel colors that made the content appear as “innocent”.The Hunt is a recorded journey of this investigation in which we analyzed how people, browsing Instagram, can come into contact with certified profiles that dangerously spread conspiracy theories. With simple actions like commenting, scrolling feeds and liking posts, we show how easy it is to get to potentially dangerous content. ","imgname1":"file1","img1":"images/file/modalTest.png","imgname2":"file2","img2":"images/file/modalTest.png","imgname3":"file3","img3":"images/file/modalTest.png","imgname4":"file4","img4":"images/file/modalTest.png","imgname5":"file5","img5":"images/file/modalTest.png",},
+{"titolo":"The Project","descrizione":"The Hunt is a project developed during the Final Synthesis Lab of Communication Design MSc at Politecnico di Milano: it consists in a series of episodes of a research regarding conspiracy theories’-related content spread by Instagram accounts.The project is an extension of previous Phase 2 of the Lab, during which our team investigated the aesthetics of conspiracy theories on digital platforms. For this project we have considered in particular the Protocol 1, in which we analyzed the activity of some Instagram influencers who spread conspiracy theories’ messages using visual languages often characterized by fancy typography and muted, pastel colors that made the content appear as “innocent”. The Hunt is a recorded journey of this investigation in which we analyzed how people, browsing Instagram, can come into contact with certified profiles that dangerously spread conspiracy theories. With simple actions like commenting, scrolling feeds and liking posts, we show how easy it is to get to potentially dangerous content. ","imgname1":"file1","img1":"images/file/modalTest.png","imgname2":"file2","img2":"images/file/modalTest.png","imgname3":"file3","img3":"images/file/modalTest.png","imgname4":"file4","img4":"images/file/modalTest.png","imgname5":"file5","img5":"images/file/modalTest.png",},
 {"titolo":"Message","descrizione":"The aim of this project is to inform the people about how simple it is to come across this type of content and to give credit to false or misleading information. We wanted to highlight this fact by showing our research process, which is obviously one of the infinite ways in which a user could encounter conspiracy theories’ messages on social media,in order to raise awareness about this phenomenon.Our audience consists in active social media users, people who use these platforms to keep up with the news and people who aren’t familiar with the topic of conspiracy theories and could potentially share and interact with this type of content."},
 {"titolo":"Goals and Audience","descrizione":"The aim of this project is to inform the people about how simple it is to come across this type of content and to give credit to false or misleading information. We wanted to highlight this fact by showing our research process, which is obviously one of the infinite ways in which a user could encounter conspiracy theories’ messages on social media,in order to raise awareness about this phenomenon.Our audience consists in active social media users, people who use these platforms to keep up with the news and people who aren’t familiar with the topic of conspiracy theories and could potentially share and interact with this type of content."},
 {"titolo":"Methods","descrizione":"Starting from a profile mentioned in an article from The Atlantic,we proceeded through snowballing in order to find other accounts.",
@@ -32,7 +32,6 @@ $(".wb-el").click(function(){
     return el.titolo === titolo
     })
 
-<<<<<<< HEAD
     sezione= sezione[0];
     if (sezione.titolo == "The Project"){
         iniziale(sezione)
@@ -43,12 +42,13 @@ $(".wb-el").click(function(){
 //    else if (selezione.titolo == "Goals and Audience"){
 //        
 //    }
-//    else if (sezione.titolo == "Methods"){
-//     $('#wb-txt').text(sezione.descrizione)
-//     $('.wb-descritpion').append("<div></>")
-//     $('.wb-descritpion').append("<p id='description2'></>")
-//     $("#description2").text(sezione.descrizione2)   
-//    }
+    else if (sezione.titolo == "Methods"){
+     $('#wb-txt').text(sezione.descrizione)
+     $('.wb-descritpion').append("<div></>")
+     $('.wb-descritpion').append("<p id='description2'></>")
+     $("#description2").text(sezione.descrizione2)   
+        
+    }
 //    else if (selezione.titolo == "Goals and Audience"){
 //     $('#wb-txt').text(sezione.descrizione)
 //        
