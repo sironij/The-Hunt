@@ -54,8 +54,8 @@
 
 }
 .eye{
-    
-    
+
+
     position:absolute;
 
     top:29%;
@@ -78,7 +78,7 @@ border: 0.04em solid #f0f0f0 ;
 
 
 #p0{
- 
+
   width:29%;
   height: 56%;
   border-radius:50%;
@@ -87,7 +87,7 @@ border: 0.04em solid #f0f0f0 ;
   top:12%;}
 
 #p1{
-  
+
   width:36%;
   height: 68%;
   border-radius:50%;
@@ -536,7 +536,18 @@ border: 0.04em solid #f0f0f0 ;
   }
 
   #parent {
-    display: content;
+    flex-grow: 10;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1.5em;
+      margin-bottom: 0.5em;
+
+    background-color: red;
+  }
+
+  .sfocatone {
+    filter:blur();
   }
 
   /*What's behind*/
@@ -607,9 +618,3 @@ border: 0.04em solid #f0f0f0 ;
   max-width: 97%;
   opacity: 100% !important;
 }
-
-
-
-
-
-
