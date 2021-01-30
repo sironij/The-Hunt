@@ -51,7 +51,7 @@ $(".preview").click(function() {
   $("#fileModal").fadeIn()
 });
 
-$(".close").click(function() {
+$(".close img").click(function() {
   $("#fileModal").fadeOut()
 });
 
