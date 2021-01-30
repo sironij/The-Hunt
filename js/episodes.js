@@ -72,6 +72,7 @@ function filler (prova){
 
 prevGen.click(function(){
     prova = $(this).attr('id');
+     $("#video").css("filter","blur(0px)");
     alessio(prova);
     filler(prova);
     $("#parent").css("display", "none");
@@ -104,7 +105,7 @@ prevGen.click(function(){
 
   $("#video").on('ended', function(e) {
 
-    $('#video').addClass(".sfocatone");
+    $('#video').css("filter","blur(10px)");
       if (temp ==0){
     $(".videocontainer").append("<div id='parent' class='endMessage'></div>" );
           temp= temp+1
@@ -119,7 +120,7 @@ prevGen.click(function(){
         $("#parent").css("display", "block")
       $("#parent").append("<h3>"+paolino.endtitle+"<p>"+paolino.ending+"</p><div id='carlo' class='avanti'><p id='txtNext'>Next episode</p></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
       $("#carlo").click(function(){
-    $("#video").removeClass(".sfocatone");
+    $("#video").css("filter","blur(0px)");
     $('#video').attr('controls',"");
           var cont = parseInt(prova) + 1;
           console.log("if<7 pre ale e fil " + prova )
@@ -136,7 +137,7 @@ prevGen.click(function(){
           console.log(prova)
              $("#parent").css("display", "none");
           $("#parent").empty()
-                $("#video").removeClass(".sfocatone");
+                $("#video").css("filter","blur(0px)");
                 $('#video').attr('controls',"")
             $("#video").currentTime = 0;
             $("#video")[0].play();
@@ -152,7 +153,7 @@ prevGen.click(function(){
        $("#rossana").click(function(){
         $("#parent").css("display", "none");
            $("#parent").empty()
-        $("#video").removeClass(".sfocatone");
+        $("#video").css("filter","blur(0px)");
            $('#video').attr('controls',"")
             $("#video").currentTime = 0;
             $("#video")[0].play();
