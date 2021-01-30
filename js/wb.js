@@ -1,5 +1,5 @@
 const sezioni = [
-{"titolo":"The Project","descrizione":"The episode starts with a brief presentation of Qanon and its presence on social media. The identification of a conspirative Instagram account will be the starting point of the research."},
+{"titolo":"The Project","descrizione":"The Hunt is a project developed during the Final Synthesis Lab of Communication Design MSc at Politecnico di Milano: it consists in a series of episodes of a research regarding conspiracy theories’-related content spread by Instagram accounts.The project is an extension of previous Phase 2 of the Lab, during which our team investigated the aesthetics of conspiracy theories on digital platforms. For this project we have considered in particular the Protocol 1, in which we analyzed the activity of some Instagram influencers who spread conspiracy theories’ messages using visual languages often characterized by fancy typography and muted, pastel colors that made the content appear as “innocent”.The Hunt is a recorded journey of this investigation in which we analyzed how people, browsing Instagram, can come into contact with certified profiles that dangerously spread conspiracy theories. With simple actions like commenting, scrolling feeds and liking posts, we show how easy it is to get to potentially dangerous content. ","imgname1":"file1","img1":"images/file/modalTest.png","imgname2":"file2","img2":"images/file/modalTest.png","imgname3":"file3","img3":"images/file/modalTest.png","imgname4":"file4","img4":"images/file/modalTest.png","imgname5":"file5","img5":"images/file/modalTest.png",},
 {"titolo":"Message","descrizione":"The aim of this project is to inform the people about how simple it is to come across this type of content and to give credit to false or misleading information. We wanted to highlight this fact by showing our research process, which is obviously one of the infinite ways in which a user could encounter conspiracy theories’ messages on social media,in order to raise awareness about this phenomenon.Our audience consists in active social media users, people who use these platforms to keep up with the news and people who aren’t familiar with the topic of conspiracy theories and could potentially share and interact with this type of content."},
 {"titolo":"Goals and Audience","descrizione":"The aim of this project is to inform the people about how simple it is to come across this type of content and to give credit to false or misleading information. We wanted to highlight this fact by showing our research process, which is obviously one of the infinite ways in which a user could encounter conspiracy theories’ messages on social media,in order to raise awareness about this phenomenon.Our audience consists in active social media users, people who use these platforms to keep up with the news and people who aren’t familiar with the topic of conspiracy theories and could potentially share and interact with this type of content."},
 {"titolo":"Methods","descrizione":"Starting from a profile mentioned in an article from The Atlantic,we proceeded through snowballing in order to find other accounts.",
@@ -10,42 +10,59 @@ const sezioni = [
 ]
 
 
+function iniziale (seziones){
+    $('#wb-txt').text(seziones.descrizione) ;
+        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img1+"></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img2+"></div>  <div class='fileName'><p>"+seziones.imgname2+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img3+"></div>  <div class='fileName'><p>"+seziones.imgname3+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img4+"></div>  <div class='fileName'><p>"+seziones.imgname4+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img5+"></div>  <div class='fileName'><p>"+seziones.imgname5+"</p></div></div>")
+}
+iniziale(sezioni[0]);
 $(".wb-el").click(function(){
-
-     var titolo = $(this).text();
-     console.log(titolo)
+    var titolo = $(this).text();
+    console.log(titolo)
     $('#wb-title').empty();
     $('#wb-txt').empty();
+    $('.wb-documentation').empty();
     $('#wb-title').text(titolo);
     $(this).addClass("wb-sidenav_selected");
     $('.wb-el').not(this).removeClass("wb-sidenav_selected");
     var sezione = sezioni.filter(function(el){
-
-                return el.titolo === titolo
+    return el.titolo === titolo
     })
 
-    sezione= sezione[0]
-    if (sezione.titolo != "Credits" && sezione.titolo!= "Methods"){
-        $('#wb-txt').text(sezione.descrizione) ;
-        $('.wb-descritpion').append("<div></>")
+    sezione= sezione[0];
+    if (sezione.titolo == "The Project"){
+        iniziale(sezione)
         }
-//    else if (sezione.titolo== Methods){
-    else{
-     $('#wb-txt').text(sezione.descrizione)
-    $('.wb-descritpion').append("<p id='description2'></>")
-    $("#description2").text(sezione.descrizione2)
-     $('.wb-descritpion').append("<div></>")
-}
-//else{
-//    console.log("qui ce sta da fa la robba dei credits")
-//}
+//    else if (sezione.titolo== "Message"){
+//        
+//    }
+//    else if (selezione.titolo == "Goals and Audience"){
+//        
+//    }
+//    else if (sezione.titolo == "Methods"){
+//     $('#wb-txt').text(sezione.descrizione)
+//     $('.wb-descritpion').append("<div></>")
+//     $('.wb-descritpion').append("<p id='description2'></>")
+//     $("#description2").text(sezione.descrizione2)   
+//    }
+//    else if (selezione.titolo == "Goals and Audience"){
+//     $('#wb-txt').text(sezione.descrizione)
+//        
+//    }
+//    else if (selezione.titolo == "Episodes"){
+//      $('#wb-txt').text(sezione.descrizione)   
+//    }
+//    else if (selezione.titolo == "Policy"){
+//      $('#wb-txt').text(sezione.descrizione)   
+//    }
+//    else{ //Credits
+//     
+//     }
+   } )
 
-} )
-
-//$("a").click(function() {
-//  $(this).addClass("wb-sidenav_selected");
-//  $('a').not(this).removeClass("wb-sidenav_selected");
-//});
 
 $(".preview").click(function() {
   $("#fileModal").fadeIn()
@@ -55,50 +72,5 @@ $(".close img").click(function() {
   $("#fileModal").fadeOut()
 });
 
-//Make the DIV element draggagle:
-//dragElement(document.getElementById("file-window1"));
 $("#fileModal").draggable();
 
-//function dragElement(elmnt) {
-//  var pos1 = 0,
-//    pos2 = 0,
-//    pos3 = 0,
-//    pos4 = 0;
-//  if (document.getElementById(elmnt.id + "header")) {
-//    /* if present, the header is where you move the DIV from:*/
-//    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//  } else {
-//    /* otherwise, move the DIV from anywhere inside the DIV:*/
-//    elmnt.onmousedown = dragMouseDown;
-//  }
-//
-//  function dragMouseDown(e) {
-//    e = e || window.event;
-//    e.preventDefault();
-//    // get the mouse cursor position at startup:
-//    pos3 = e.clientX;
-//    pos4 = e.clientY;
-//    document.onmouseup = closeDragElement;
-//    // call a function whenever the cursor moves:
-//    document.onmousemove = elementDrag;
-//  }
-//
-//  function elementDrag(e) {
-//    e = e || window.event;
-//    e.preventDefault();
-//    // calculate the new cursor position:
-//    pos1 = pos3 - e.clientX;
-//    pos2 = pos4 - e.clientY;
-//    pos3 = e.clientX;
-//    pos4 = e.clientY;
-//    // set the element's new position:
-//    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-//    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-//  }
-//
-//  function closeDragElement() {
-//    /* stop moving when mouse button is released:*/
-//    document.onmouseup = null;
-//    document.onmousemove = null;
-//  }
-//}
