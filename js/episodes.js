@@ -118,7 +118,7 @@ prevGen.click(function(){
           console.log("if<7 "+prova)
 
         $("#parent").css("display", "block")
-      $("#parent").append("<h3>"+paolino.endtitle+"<p>"+paolino.ending+"</p><div id='carlo' class='avanti'><p id='txtNext'>Next episode</p></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
+      $("#parent").append("<h3>"+paolino.endtitle+"</h3><p>"+paolino.ending+"</p><div id='parent-pulsanti'> <div id='carlo' class='avanti parent-bottone'><p id='txtNext'>Next episode</p></div><div id='rossana' class='ricarica parent-bottone' ><p id='txtReload'>See this episode again</p></div></div>");
       $("#carlo").click(function(){
     $("#video").css("filter","blur(0px)");
     $('#video').attr('controls',"");
@@ -149,7 +149,7 @@ prevGen.click(function(){
       else if (prova = 7){
           console.log("if=7"+prova)
        $("#parent").css("display", "block")
-       $("#parent").append("<p>Your white tail is now deep in the conspiracy theories, read our disclosure to understand our research.</p><div id='carlo' class='avanti'><a id='toDisc' href='whatsbehind.html'>Disclosure</a></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
+       $("#parent").append("<p>Your white tail is now deep in the conspiracy theories, read our disclosure to understand our research.</p><div id='parent-pulsanti'><div id='carlo' class='avanti parent-bottone'><a id='toDisc' href='whatsbehind.html'>Disclosure</a></div><div id='rossana' class='ricarica parent-bottone'><p id='txtReload'>See this episode again</p></div></div>");
        $("#rossana").click(function(){
         $("#parent").css("display", "none");
            $("#parent").empty()
