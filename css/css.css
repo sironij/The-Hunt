@@ -569,7 +569,7 @@ opacity: 20%; */
 
   /*What's behind*/
   #wb-leftCont {
-    width: 30%;
+    width: 20%;
   }
 
   .wb-sidenav {
@@ -592,7 +592,7 @@ opacity: 20%; */
   }
 
   #wb-rightCont {
-    width: 70%;
+    width: 80%;
     padding: 0 !important;
   }
 
@@ -612,8 +612,6 @@ opacity: 20%; */
     padding: 0.5em 0 0 0.5em;
   }
 
-  .close img {}
-
   #fileModal {
     display: none;
     position: absolute;
@@ -632,3 +630,33 @@ opacity: 20%; */
     max-width: 97%;
     opacity: 100% !important;
   }
+
+  /*Per marco*/
+
+  .wb-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .wb-carousel img {
+    padding: .5em;
+    max-width: 8em;
+    height: auto;
+  }
+
+#wb-carouselButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  .wb-nextButton {
+    cursor: pointer;
+  }
+
+  .wb-backButton {
+    cursor: pointer;
+  }
+
+  /*Per marco fine*/

@@ -27,7 +27,7 @@ $(".wb-el").click(function(){
     sezione= sezione[0]
     if (sezione.titolo != "Credits" && sezione.titolo!= "Methods"){
         $('#wb-txt').text(sezione.descrizione) ;
-        $('.wb-descritpion').append("<div></>")
+        $('.wb-descritpion').append("<div></div>")
         }
 //    else if (sezione.titolo== Methods){
     else{
