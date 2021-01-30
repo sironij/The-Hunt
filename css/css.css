@@ -511,8 +511,6 @@ opacity: 20%; */
 
   #e-rightCont {
     width: 20%;
-    height: 65vh;
-    overflow: scroll;
   }
 
   #previewEP {
@@ -524,12 +522,17 @@ opacity: 20%; */
   }
 
   .endMessage {
-    border-radius: .5em;
-    border-style: none;
     position: absolute;
+    width: 30%;
     padding: 1em;
     margin: 5em;
-    background-color: green;
+    border-radius: .5em;
+    border-style: none;
+    border: 1px solid white;
+  }
+
+  .endMessage h3 {
+    text-transform: uppercase;
   }
 
   .endMessage p, h3 {
@@ -537,26 +540,36 @@ opacity: 20%; */
     color: white;
   }
 
-  #parent-pulsanti{
+  #parent-pulsanti {
     display: flex;
     flex-direction: row;
     margin top: 1em;
     justify-content: space-between;
+    cursor: pointer;
   }
 
-.parent-bottone {
-  padding: 1em;
-  border: 1px solid black;
-  border-radius: 0.5em;
-}
+  .parent-bottone {
+    padding: .15em .75em .15em .75em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+  }
 
-#carlo {
-  background-color: #1874EA;
-}
+  #carlo {
+    background-color: #1874EA;
+  }
+
+  #rossana {
+    background-color: #EFEFEF;
+    color: black;
+  }
+
+  #rossana p {
+    color: black;
+  }
 
   /*What's behind*/
   #wb-leftCont {
-    width: 30%;
+    width: 20%;
   }
 
   .wb-sidenav {
@@ -579,7 +592,7 @@ opacity: 20%; */
   }
 
   #wb-rightCont {
-    width: 70%;
+    width: 80%;
     padding: 0 !important;
   }
 
@@ -599,8 +612,6 @@ opacity: 20%; */
     padding: 0.5em 0 0 0.5em;
   }
 
-  .close img {}
-
   #fileModal {
     display: none;
     position: absolute;
@@ -619,3 +630,33 @@ opacity: 20%; */
     max-width: 97%;
     opacity: 100% !important;
   }
+
+  /*Per marco*/
+
+  .wb-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .wb-carousel img {
+    padding: .5em;
+    max-width: 8em;
+    height: auto;
+  }
+
+#wb-carouselButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  .wb-nextButton {
+    cursor: pointer;
+  }
+
+  .wb-backButton {
+    cursor: pointer;
+  }
+
+  /*Per marco fine*/

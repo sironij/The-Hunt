@@ -32,6 +32,7 @@ $(".wb-el").click(function(){
     return el.titolo === titolo
     })
 
+<<<<<<< HEAD
     sezione= sezione[0];
     if (sezione.titolo == "The Project"){
         iniziale(sezione)
