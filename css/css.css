@@ -527,19 +527,23 @@ opacity: 20%; */
     position: absolute;
     padding: 1em;
     margin: 5em;
-    background-color: red;
+    background-color: green;
   }
 
   .endMessage h3 {
     font-family: 'sf_pro_textbold';
-    color:white;
   }
 
   #parent-pulsanti{
     display: flex;
     flex-direction: row;
+    margin top: 1em;
   }
 
+.parent-bottone {
+  padding: 1em;
+  border: 1px solid black;
+}
 
 
   /*What's behind*/
