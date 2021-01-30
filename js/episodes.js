@@ -104,7 +104,7 @@ prevGen.click(function(){
 
   $("#video").on('ended', function(e) {
 
-    $('#video').hide();
+    $('#video').addClass(".sfocatone");
       if (temp ==0){
     $(".videocontainer").append("<div id='parent' class='endMessage'></div>" );
           temp= temp+1
@@ -119,7 +119,7 @@ prevGen.click(function(){
         $("#parent").css("display", "block")
       $("#parent").append("<h3>"+paolino.endtitle+"<p>"+paolino.ending+"</p><div id='carlo' class='avanti'><p id='txtNext'>Next episode</p></div><div id='rossana' class='ricarica'><p id='txtReload'>See this episode again</p></div>");
       $("#carlo").click(function(){
-    $("#video").css("display", "block");
+    $("#video").removeClass(".sfocatone");
     $('#video').attr('controls',"");
           var cont = parseInt(prova) + 1;
           console.log("if<7 pre ale e fil " + prova )
@@ -136,7 +136,7 @@ prevGen.click(function(){
           console.log(prova)
              $("#parent").css("display", "none");
           $("#parent").empty()
-                $("#video").css("display", "block");
+                $("#video").removeClass(".sfocatone"));
                 $('#video').attr('controls',"")
             $("#video").currentTime = 0;
             $("#video")[0].play();
@@ -152,7 +152,7 @@ prevGen.click(function(){
        $("#rossana").click(function(){
         $("#parent").css("display", "none");
            $("#parent").empty()
-        $("#video").css("display", "block");
+        $("#video").removeClass(".sfocatone");
            $('#video').attr('controls',"")
             $("#video").currentTime = 0;
             $("#video")[0].play();
