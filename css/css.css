@@ -46,13 +46,13 @@
 
   border-radius:50%;
 
-  left:0%;
+  left:1%;
   margin-left:0;
   top:0%;
   margin-top:0;
   width:4em;
   height:4em;
-  top:50%;
+  top:25%;
 
 }
 .eye{
@@ -60,7 +60,7 @@
     position:absolute;
 
     top:29%;
-    left:50%;
+    left:9.5%;
 width:80%;
   height:42%;
   border-radius:50%;
@@ -103,8 +103,8 @@ border: 0.04em solid black;
   height: 80%;
   border-radius:50%;
   position:absolute;
-  left:30%;
-  top:0%;
+  left:28%;
+  top:3%;
 }
 
 #p3{
@@ -113,8 +113,8 @@ background-color: black;
     height: 53%;
     border-radius: 50%;
     position: absolute;
-    left: 39.5%;
-    top: 17%
+    left: 38.5%;
+    top: 15%
 }
 
   #myContainer {
@@ -608,3 +608,9 @@ background-color: black;
   max-width: 97%;
   opacity: 100% !important;
 }
+
+
+
+
+
+

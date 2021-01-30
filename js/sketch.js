@@ -72,14 +72,15 @@ var handleMouseMove = function (event) {
   output.y.current = output.y.start + (input.mouseY.fraction * output.y.range);
 
   // apply output to html
-  var a = 1.7
-  var b = 1.2
-  var s = 1.4
+  var a = 0.35 // pupilla
+  var b = 0.25 //secondo
+  var s = 0.35 // dimensione pupilla 3
+  var t = 0.15  // più grande 1
   pupilsArray.forEach(function (pupil, k){
     p0.style.transform = 'translate('+output.x.current*s+'px, '+output.y.current*s+'px)'
     p3.style.transform = 'translate('+output.x.current*a+'px, '+output.y.current*a+'px)'
     p1.style.transform = 'translate('+output.x.current*b+'px, '+output.y.current*b+'px)'
-    p2.style.transform = 'translate('+output.x.current+'px, '+output.y.current+'px)';
+    p2.style.transform = 'translate('+output.x.current*t+'px, '+output.y.current*t+'px)';
 
   });
 
