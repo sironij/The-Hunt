@@ -74,9 +74,9 @@ $(".wb-el").click(function(){
     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
     $('.wb-description').append("<p>"+sezione.descrizione2"</p>")
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+">");
-    $('.wb-description').append("<p>"+sezione.descrizione2"</p>")
+    $('.wb-description').append("<p>"+sezione.descrizione1"</p>")
               $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+">");
-        $('.wb-description').append("<p>"+sezione.descrizione3"</p>");
+        $('.wb-description').append("<p>"+sezione.descrizione1"</p>");
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
         
    }
