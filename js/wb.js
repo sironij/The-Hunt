@@ -72,7 +72,7 @@ $(".wb-el").click(function(){
     else if (selezione.titolo == "Episodes"){
     $('#wb-txt').text(sezione.descrizione);
     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
-    $('.wb-description').append("<p>"+sezione.descrizione2"</p>")
+    $('.wb-description').append("<p>"+sezione.descrizione1"</p>")
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+">");
     $('.wb-description').append("<p>"+sezione.descrizione1"</p>")
               $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+">");
