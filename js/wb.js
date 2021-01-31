@@ -62,7 +62,7 @@ $(".wb-el").click(function(){
         console.log(sezione)
      $('#wb-txt').text(sezione.descrizione)
         
-     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"><div/><div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
+     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"> </div> <div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
      $('.wb-description').append("<p id='description2'></>")
      $('.wb-description').append("<div id='wb-carouselButton'><p class='wb-backButton'>← BACK</p><p class='wb-nextButton'>NEXT → </p></div>")
      $("#description2").text(sezione.descrizione2)   
