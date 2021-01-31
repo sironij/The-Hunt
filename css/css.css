@@ -402,6 +402,14 @@ opacity: 20%; */
     background-color: #f8f8f9;
     position: relative;
     padding: 0px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .barraModal {
+    order: 1;
+    background-color: #f8f8f9;
+    position: relative;
+    padding: 0px;
     border-radius: 10px;
   }
 
