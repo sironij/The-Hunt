@@ -51,7 +51,7 @@ $(".wb-el").click(function(){
   else if (sezione.titolo== "Message"){
         $('#wb-txt').text(sezione.descrizione) ;
         $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><a href ='https://news.yahoo.com/fbi-documents-conspiracy-theories-terrorism-160000507.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAA94asLc4zwp3rrgpiSZmPEnU4PUc2zUAdeMGjksjlP-I5D_XpyBogh2FeFUs3XxAQCSuavNlEAOZ8kcnyEX7kC1Aa5r6PnIEL4KsAkYq_5DQnOh-TAvJPKLTTvRmDT9ti5qlrJvSzT_zY_CmzWNN2gdD8DKFWGvbNDxqPuAMeho' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
+        $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
 
    else if (sezione.titolo == "Goals and Audience"){
        $('#wb-txt').text(sezione.descrizione) ;
