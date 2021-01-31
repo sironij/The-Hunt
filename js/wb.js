@@ -69,9 +69,17 @@ $(".wb-el").click(function(){
 
     }
 
-//    else if (selezione.titolo == "Episodes"){
-//      $('#wb-txt').text(sezione.descrizione)
-//    }
+    else if (selezione.titolo == "Episodes"){
+    $('#wb-txt').text(sezione.descrizione);
+    $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
+    $('.wb-description').append("<p>"+sezione.descrizione2"</p>")
+        $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+">");
+    $('.wb-description').append("<p>"+sezione.descrizione2"</p>")
+              $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+"><div class='wb-carousel'><div><img  src="+sezione.img1+">");
+        $('.wb-description').append("<p>"+sezione.descrizione3"</p>");
+        $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
+        
+   }
     else if (sezione.titolo == "Policy"){
      $('#wb-txt').text(sezione.descrizione)
      $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div>")
