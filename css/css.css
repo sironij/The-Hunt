@@ -144,10 +144,27 @@ opacity: 20%; */
 
   #mobileAlert {
     position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: black;
     z-index: 999;
+display: flex;
+justify-content: center;
+align-content: center;
+opacity: 0%;
+  }
+
+  #mobileAlert p{
+    font-size: 1em;
+    color: white;
+  }
+
+  #mobileAlerttext{
+    padding: 2em;
+    margin: auto;
   }
 
   #home-button {
