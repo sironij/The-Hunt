@@ -50,19 +50,19 @@ $(".wb-el").click(function(){
         }
   else if (sezione.titolo== "Message"){
         $('#wb-txt').text(sezione.descrizione) ;
-        $('.wb-documentation').append("<div><div class='wb-preview'><a href ='https://news.yahoo.com/fbi-documents-conspiracy-theories-terrorism-160000507.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAA94asLc4zwp3rrgpiSZmPEnU4PUc2zUAdeMGjksjlP-I5D_XpyBogh2FeFUs3XxAQCSuavNlEAOZ8kcnyEX7kC1Aa5r6PnIEL4KsAkYq_5DQnOh-TAvJPKLTTvRmDT9ti5qlrJvSzT_zY_CmzWNN2gdD8DKFWGvbNDxqPuAMeho' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><a href ='https://news.yahoo.com/fbi-documents-conspiracy-theories-terrorism-160000507.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAA94asLc4zwp3rrgpiSZmPEnU4PUc2zUAdeMGjksjlP-I5D_XpyBogh2FeFUs3XxAQCSuavNlEAOZ8kcnyEX7kC1Aa5r6PnIEL4KsAkYq_5DQnOh-TAvJPKLTTvRmDT9ti5qlrJvSzT_zY_CmzWNN2gdD8DKFWGvbNDxqPuAMeho' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
         $('.wb-documentation').append("<div><div class='wb-preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
 
    else if (sezione.titolo == "Goals and Audience"){
        $('#wb-txt').text(sezione.descrizione) ;
-        $('.wb-documentation').append("<div><div class='wb-preview'><a href ='https://www.brookings.edu/blog/order-from-chaos/2018/05/09/how-misinformation-spreads-on-social-media-and-what-to-do-about-it/' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div class='wb-file'><div class='wb-preview'><a href ='https://www.brookings.edu/blog/order-from-chaos/2018/05/09/how-misinformation-spreads-on-social-media-and-what-to-do-about-it/' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
 
    }
     else if (sezione.titolo === "Methods"){
         console.log(sezione)
      $('#wb-txt').text(sezione.descrizione)
 
-     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"> </div> <div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
+     $('.wb-description').append("<div class='wb-carousel'><div ><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"> </div> <div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
      $('.wb-description').append("<p id='description2'></>")
      $('.wb-description').append("<div id='wb-carouselButton'><p class='wb-backButton'>← BACK</p><p class='wb-nextButton'>NEXT → </p></div>")
      $("#description2").text(sezione.descrizione2)
