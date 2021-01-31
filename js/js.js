@@ -2,6 +2,19 @@ $(document).scroll(function() {
   $("#scroll").fadeOut("slow");
 });
 
+function alertMobile(x) {
+  if (x.matches) { // If media query matches
+    $("html").addClass("lockScroll");
+    $("#mobileAlert").css({"opacity":"75%"});
+  } else {
+
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+alertMobile(x) // Call listener function at run time
+x.addListener(alertMobile) // Attach listener function on state changes
+
 
 // prevent refresh
 
