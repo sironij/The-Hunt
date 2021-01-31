@@ -687,4 +687,7 @@ opacity: 20%; */
     max-width: 70%;
   }
 
+  .wb-file {
+    align-self: flex-end;
+  }
   /*Per marco fine*/
