@@ -51,6 +51,7 @@ $(".wb-el").click(function(){
         $('#wb-txt').text(sezione.descrizione) ;
         $('.wb-documentation').append("<div><div class='preview'><img src="+sezione.img1+"></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
         $('.wb-documentation').append("<div><div class='preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
+    
    else if (sezione.titolo == "Goals and Audience"){
        $('#wb-txt').text(sezione.descrizione) ;
         $('.wb-documentation').append("<div><div class='preview'><img src="+sezione.img1+"></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
@@ -66,10 +67,7 @@ $(".wb-el").click(function(){
      $("#description2").text(sezione.descrizione2)   
         
     }
-//    else if (selezione.titolo == "Goals and Audience"){
-//     $('#wb-txt').text(sezione.descrizione)
-//        
-//    }
+
 //    else if (selezione.titolo == "Episodes"){
 //      $('#wb-txt').text(sezione.descrizione)   
 //    }
