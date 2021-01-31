@@ -545,6 +545,8 @@ opacity: 20%; */
     border-radius: .5em;
     border-style: none;
     border: 1px solid white;
+    background-color: #f8f8f9;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
   }
 
   .endMessage h3 {
@@ -553,7 +555,7 @@ opacity: 20%; */
 
   .endMessage p, h3 {
     font-family: 'sf_pro_textregular';
-    color: white;
+    color: black;
   }
 
   #parent-pulsanti {
@@ -572,6 +574,11 @@ opacity: 20%; */
 
   #carlo {
     background-color: #1874EA;
+    color: white;
+  }
+
+  #carlo p{
+    color: white;
   }
 
   #rossana {
