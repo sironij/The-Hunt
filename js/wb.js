@@ -78,9 +78,9 @@ $(".wb-el").click(function(){
     $('#wb-txt').text(sezione.descrizione);
     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
     $('.wb-description').append("<p>"+sezione.descrizione+"</p>")
-        $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img2+"><div class='wb-carousel'><div><img  src="+sezione.img3+"><div class='wb-carousel'><div><img  src="+sezione.img4+">");
+        $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img2+"></div><div><img  src="+sezione.img3+"></div><div><img  src="+sezione.img4+"></div></div>");
     $('.wb-description').append("<p>"+sezione.descrizione+"</p>")
-              $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img5+"><div class='wb-carousel'><div><img  src="+sezione.img6+"><div class='wb-carousel'><div><img  src="+sezione.img7+">");
+              $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img5+"></div><div><img  src="+sezione.img6+"></div><div><img  src="+sezione.img7+"></div></div>");
         $('.wb-description').append("<p>"+sezione.descrizione+"</p>");
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img8+">");
         
