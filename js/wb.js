@@ -5,7 +5,7 @@ const sezioni = [
 {"titolo":"Methods","descrizione":"Starting from a profile mentioned in an article from The Atlantic,we proceeded through snowballing in order to find other accounts.",
 "descrizione2":"In particular, we looked for suggested profiles, profile’s follower, repost, highlights, comments on the posts and tags.","img1":"images/whatsbehind/1.png","img2":"images/whatsbehind/2.png","img3":"images/whatsbehind/3.png","img4":"images/whatsbehind/4.png","img5":"images/whatsbehind/5.png","img6":"images/whatsbehind/6.png"},
 {"titolo":"Episodes","descrizione":"The Hunt’s visual language is inspired by the desktop documentary aesthetic: the goal was to recreate the environment of a computer, in order to engage the viewer and to display our research process step by step as it was recorded.The interface assets as well as the interactions are reinterpreted to convey personality and uniqueness to the project, even though the digital context (for example Instagram’s UI) is essential to the concept."},
-{"titolo":"Policy","descrizione":"The episodes contains the sensitive data of the instagram profiles that we encountered during our research. In order to protect the privacy of the parties involved we have covered the faces of the profiles with a blur / pixels and we have replaced their names with fictitious words."},
+{"titolo":"Policy","descrizione":"The episodes contains the sensitive data of the instagram profiles that we encountered during our research. In order to protect the privacy of the parties involved we have covered the faces of the profiles with a blur / pixels and we have replaced their names with fictitious words.","imgname1":"file1","img1":"images/whatsbehind/policy00.jpeg","imgname2":"file2","img2":"images/whatsbehind/policy01.jpg"},
 {"titolo":"Credits",}
 
 ]
@@ -72,9 +72,10 @@ $(".wb-el").click(function(){
 //    else if (selezione.titolo == "Episodes"){
 //      $('#wb-txt').text(sezione.descrizione)   
 //    }
-//    else if (selezione.titolo == "Policy"){
-//      $('#wb-txt').text(sezione.descrizione)   
-//    }
+    else if (sezione.titolo == "Policy"){
+     $('#wb-txt').text(sezione.descrizione)   
+     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div>")
+   }
     else{ //Credits
      console.log("fuznioa")
      }
