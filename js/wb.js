@@ -48,17 +48,17 @@ $(".wb-el").click(function(){
     if (sezione.titolo == "The Project"){
         iniziale(sezione)
         }
-  else if (sezione.titolo== "Message"){
+  else if (sezione.titolo=== "Message"){
         $('#wb-txt').text(sezione.descrizione) ;
         $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><a href ='https://news.yahoo.com/fbi-documents-conspiracy-theories-terrorism-160000507.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAA94asLc4zwp3rrgpiSZmPEnU4PUc2zUAdeMGjksjlP-I5D_XpyBogh2FeFUs3XxAQCSuavNlEAOZ8kcnyEX7kC1Aa5r6PnIEL4KsAkYq_5DQnOh-TAvJPKLTTvRmDT9ti5qlrJvSzT_zY_CmzWNN2gdD8DKFWGvbNDxqPuAMeho' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
-        $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
+        $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><img src="+sezione.img2+"></div><div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
 
-   else if (sezione.titolo == "Goals and Audience"){
+   else if (sezione.titolo === "Goals and Audience"){
        $('#wb-txt').text(sezione.descrizione) ;
         $('.wb-documentation').append("<div class='wb-file'><div class='wb-preview'><a href ='https://www.brookings.edu/blog/order-from-chaos/2018/05/09/how-misinformation-spreads-on-social-media-and-what-to-do-about-it/' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
 
    }
-    else if (sezione.titolo === "Methods"){
+   else if (sezione.titolo === "Methods"){
         console.log(sezione)
      $('#wb-txt').text(sezione.descrizione)
 
@@ -69,7 +69,7 @@ $(".wb-el").click(function(){
 
     }
 
-    else if (sezione.titolo == "Episodes"){
+    else if (sezione.titolo === "Episodes"){
     $('#wb-txt').text(sezione.descrizione);
     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
     $('.wb-description').append("<p>"+sezione.descrizione+"</p>")
@@ -80,27 +80,29 @@ $(".wb-el").click(function(){
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img8+">");
         
    }
-    else if (sezione.titolo == "Policy"){
+    else if (sezione.titolo === "Policy"){
      $('#wb-txt').text(sezione.descrizione)
      $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div>")
    }
 
-   /*
-    else if (sezione.titolo == "Credits") { //Credits
-      $('#wb-txt').text(sezione.descrizione)
-      $('.wb-description').append("<div id='wb-creditsContainer'></div>")
-      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
-      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
-      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
-      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
-      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
 
-        $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+    else if (sezione.titolo === "Credits") { //Credits
+        console.log("bestiadidio")
+      $('.wb-description').append("<div id='wb-creditsContainer'></div>")
+      $('#wb-creditsContainer').append("<div id='credit1' class='wb-creditsRow'></div>")
+      $('#credit1').append("<div class='avatar'> <a href='https://elisafinesso.com' target='_blank'><img src='images/bellissimi/finish.jpg'></a><h5>Elsa Finnegan</h5><p>finesso.elisa@gmail.com</p><p>IG: ccamalow</p></div>")
+      $('#credit1').append("<div class='avatar'><a><img src='images/bellissimi/gib.jpg'></a><h5>Ilenia Gibiloba</h5><p>elena.gibelli1@gmail.com</p><p>IG: rgb.elli</p></div>")
+      $('#credit1').append("<div class='avatar'><a href='http://federicalaurencio.bss.design/' target='_blank'><img src='images/bellissimi/lau.jpeg'></a><h5>Laura Laureida</h5><p>è suscettibile, non scrivetele</p><p>fidatevi non fatelo</p></div>")
+         $('#wb-creditsContainer').append("<div id='credit2' class='wb-creditsRow'></div>")
+      $('#credit2').append("<div class='avatar'><a href=' andreamorandini.com' target='_blank'><img src='images/bellissimi/mauro.jpeg'></a> <h5>Marek <br> Morandinski</h5><p>andremora97@gmail.com</p><p>IG: andreamario.m</p></div>")
+      $('#credit2').append("<div class='avatar'><a href='https://jacoposironi.com' target='_blank'><img src='images/bellissimi/jac.jpeg'></a> <h5>Sir Johnatan</h5> <p>sironij@gmail.com</p><p>IG: jacopo_sir</p></div></div>")
+
+        $('#credit2').append("<div class='avatar'><a><img src='images/bellissimi/mrc.jpeg'> </a><h5>Mirko Valley</h5><p>è troppo impegnato per rispondervi</p><p>probabilmente si sta suicidando</p></div>")
      }
-     */
-     
+  
+
      else{
-       console.log("viva la figa e chi la castiga");
+       console.log("C'est la viz");
      }
    } )
 
