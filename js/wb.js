@@ -13,11 +13,11 @@ const sezioni = [
 
 function iniziale (seziones){
     $('#wb-txt').text(seziones.descrizione) ;
-        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img1+"></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img2+"></div>  <div class='fileName'><p>"+seziones.imgname2+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img3+"></div>  <div class='fileName'><p>"+seziones.imgname3+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img4+"></div>  <div class='fileName'><p>"+seziones.imgname4+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='preview'><img src="+seziones.img5+"></div>  <div class='fileName'><p>"+seziones.imgname5+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+seziones.img1+"></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+seziones.img2+"></div>  <div class='fileName'><p>"+seziones.imgname2+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+seziones.img3+"></div>  <div class='fileName'><p>"+seziones.imgname3+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+seziones.img4+"></div>  <div class='fileName'><p>"+seziones.imgname4+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+seziones.img5+"></div>  <div class='fileName'><p>"+seziones.imgname5+"</p></div></div>")
 }
 
 
@@ -28,7 +28,7 @@ iniziale(sezioni[0]);
 
 
 $(".wb-el").click(function(){
-    
+
     var titolo = $(this).text();
     console.log(titolo)
     $('#wb-title').empty();
@@ -50,30 +50,30 @@ $(".wb-el").click(function(){
         }
   else if (sezione.titolo== "Message"){
         $('#wb-txt').text(sezione.descrizione) ;
-        $('.wb-documentation').append("<div><div class='preview'><img src="+sezione.img1+"></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
-    
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+sezione.img1+"></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+sezione.img2+"></div>  <div class='fileName'><p>"+sezione.imgname2+"</p></div></div>") }
+
    else if (sezione.titolo == "Goals and Audience"){
        $('#wb-txt').text(sezione.descrizione) ;
-        $('.wb-documentation').append("<div><div class='preview'><img src="+sezione.img1+"></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
-     
+        $('.wb-documentation').append("<div><div class='wb-preview'><img src="+sezione.img1+"></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
+
    }
     else if (sezione.titolo === "Methods"){
         console.log(sezione)
      $('#wb-txt').text(sezione.descrizione)
-        
+
      $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"> </div> <div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
      $('.wb-description').append("<p id='description2'></>")
      $('.wb-description').append("<div id='wb-carouselButton'><p class='wb-backButton'>← BACK</p><p class='wb-nextButton'>NEXT → </p></div>")
-     $("#description2").text(sezione.descrizione2)   
-        
+     $("#description2").text(sezione.descrizione2)
+
     }
 
 //    else if (selezione.titolo == "Episodes"){
-//      $('#wb-txt').text(sezione.descrizione)   
+//      $('#wb-txt').text(sezione.descrizione)
 //    }
     else if (sezione.titolo == "Policy"){
-     $('#wb-txt').text(sezione.descrizione)   
+     $('#wb-txt').text(sezione.descrizione)
      $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div>")
    }
     else{ //Credits
@@ -82,7 +82,7 @@ $(".wb-el").click(function(){
    } )
 
 
-$(".preview").click(function() {
+$(".wb-preview").click(function() {
   $("#fileModal").fadeIn()
 });
 
@@ -91,4 +91,3 @@ $(".close img").click(function() {
 });
 
 $("#fileModal").draggable();
-
