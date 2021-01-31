@@ -7,7 +7,7 @@ function preload(){
 function setup() {
 let cnv = createCanvas(windowWidth, windowHeight, WEBGL);
   cnv.parent("myContainer");
-  
+
 }
 
 function draw() {
@@ -18,7 +18,11 @@ function draw() {
   theShader.setUniform("time", millis() / 1000.0);
 
   quad(-1, -1, 1, -1, 1, 1, -1, 1);
-    
-   
 
+
+
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
