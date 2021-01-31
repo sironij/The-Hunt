@@ -76,8 +76,23 @@ $(".wb-el").click(function(){
      $('#wb-txt').text(sezione.descrizione)
      $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div>")
    }
-    else{ //Credits
-     console.log("fuznioa")
+
+   /*
+    else if (sezione.titolo == "Credits") { //Credits
+      $('#wb-txt').text(sezione.descrizione)
+      $('.wb-description').append("<div id='wb-creditsContainer'></div>")
+      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+      $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+
+        $('.wb-description').append("<div class='avatar'><img src='images/bellissimi/finish.jpg'></div>")
+     }
+     */
+     
+     else{
+       console.log("viva la figa e chi la castiga");
      }
    } )
 
