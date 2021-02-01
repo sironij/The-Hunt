@@ -1,14 +1,21 @@
-$(document).scroll(function() {
-  $("#scroll").fadeOut("slow");
-});
 
-function alertMobile(x) {
-  if (x.matches) { // If media query matches
-    $("html").addClass("lockScroll");
-    $("#mobileAlert").css({"display":"flex"});
-  } else {
 
+
+  $(document).scroll(function() {
+    $("#scroll").fadeOut("slow");
+  });
+
+  function alertMobile(x) {
+    if (x.matches) { // If media query matches
+      $("html").addClass("lockScroll");
+      $("#mobileAlert").css({
+        "display": "flex"
+      });
+    } else {
+
+    }
   }
+<<<<<<< HEAD
 }
 
 var x = window.matchMedia("(max-width: 700px)")
