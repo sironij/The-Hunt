@@ -72,8 +72,9 @@ $(".wb-el").click(function(){
      $('.wb-description').append("<div class='wb-carousel'><div ><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"> </div> <div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
 
        $("#description3").text(sezione.descrizione3)
+        $('.wb-description').append("<p id='description3'></>")
         $('.wb-description').append("<div class='wb-carousel'><div ><img  src="+sezione.img7+"></div><div><img src="+sezione.img8+"></div>");
-     $('.wb-description').append("<p id='description3'></>")
+
      $("#description3").text(sezione.descrizione4)
 
 
