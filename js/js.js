@@ -5,7 +5,7 @@ $(document).scroll(function() {
 function alertMobile(x) {
   if (x.matches) { // If media query matches
     $("html").addClass("lockScroll");
-    $("#mobileAlert").css({"opacity":"75%"});
+    $("#mobileAlert").css({"display":"flex"});
   } else {
 
   }
