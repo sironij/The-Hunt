@@ -12,7 +12,9 @@
     background-size: cover;
 */
   }
-
+hr {
+  border: 0.1px rgba(0,0,0,.2)
+}
   .c {
     fill: none;
     stroke: #f0f0f0;
@@ -170,6 +172,12 @@ opacity: 20%; */
   #home-button {
     cursor: pointer;
   }
+
+#txtNext{
+    color:white;
+    text-decoration: none;
+    align-items: center;
+}
 
   .menu-bar {
     position: fixed;
