@@ -285,12 +285,21 @@ opacity: 20%; */
   }
 
   #alert_active {
+    margin-top: 25vh;
     height: 10vh;
     width: 100vw;
     z-index: 14;
   }
 
   #alert_active2 {
+    margin-top: 25vh;
+    height: 10vh;
+    width: 100vw;
+    z-index: 14;
+  }
+
+  #alert_active3 {
+    margin-top: 25vh;
     height: 10vh;
     width: 100vw;
     z-index: 14;
