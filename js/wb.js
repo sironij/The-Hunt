@@ -13,12 +13,13 @@ const sezioni = [
 
 function iniziale (seziones){
     $('#wb-txt').text(seziones.descrizione) ;
-        $('.wb-documentation').append("<div><div class='wb-preview'><img  class='50special' src="+seziones.img1+"></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='wb-preview'><img class='50special' src="+seziones.img2+"></div>  <div class='fileName'><p>"+seziones.imgname2+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='wb-preview'><img  class='50special' src="+seziones.img3+"></div>  <div class='fileName'><p >"+seziones.imgname3+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='wb-preview'><img class='50special' src="+seziones.img4+"></div>  <div class='fileName'><p>"+seziones.imgname4+"</p></div></div>")
-        $('.wb-documentation').append("<div><div class='wb-preview'><img class='50special' src= "+seziones.img5+"></div>  <div class='fileName'><p>"+seziones.imgname5+"</p></div></div>")
+        $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img  class='50special' src="+seziones.img1+"></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img class='50special' src="+seziones.img2+"></div>  <div class='fileName'><p>"+seziones.imgname2+"</p></div></div>")
+        $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img  class='50special' src="+seziones.img3+"></div>  <div class='fileName'><p >"+seziones.imgname3+"</p></div></div>")
+        $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img class='50special' src="+seziones.img4+"></div>  <div class='fileName'><p>"+seziones.imgname4+"</p></div></div>")
+        $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img class='50special' src= "+seziones.img5+"></div>  <div class='fileName'><p>"+seziones.imgname5+"</p></div></div>")
     lucrezia();
+jacopo()
 }
 
 
@@ -53,8 +54,9 @@ $(".wb-el").click(function(){
   else if (sezione.titolo=== "Message"){
         $('#wb-txt').text(sezione.descrizione) ;
         $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><a href ='https://news.yahoo.com/fbi-documents-conspiracy-theories-terrorism-160000507.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAA94asLc4zwp3rrgpiSZmPEnU4PUc2zUAdeMGjksjlP-I5D_XpyBogh2FeFUs3XxAQCSuavNlEAOZ8kcnyEX7kC1Aa5r6PnIEL4KsAkYq_5DQnOh-TAvJPKLTTvRmDT9ti5qlrJvSzT_zY_CmzWNN2gdD8DKFWGvbNDxqPuAMeho' target='_blank'><img src="+sezione.img1+"></a></div>  <div class='fileName'><p>"+sezione.imgname1+"</p></div></div>")
-        $('.wb-documentation').append("<div  class='wb-file'><div class='wb-preview'><img class='50special' src="+sezione.img2+"></div><div class='fileName'><p>"+sezione.imgname2+"</p></div></div>")
+        $('.wb-documentation').append("<div  class='wb-file wb-wrap'><div class='wb-preview'><img class='50special' src="+sezione.img2+"></div><div class='fileName'><p>"+sezione.imgname2+"</p></div></div>")
       lucrezia();
+    jacopo()
 
   }
 
@@ -121,7 +123,7 @@ $(".wb-el").click(function(){
    } );
 
 function lucrezia(){
-$(".50special").click(function() {
+$(".50special").click(function() { 
     console.log('bailamorena')
   $("#fileModal").fadeIn()
     $("#modalin").attr("src",$(this).attr("src"))
@@ -134,4 +136,15 @@ $(".close img").click(function() {
 
 $("#fileModal").draggable();
     }
+
+function jacopo(){
+    $(".wb-wrap").click(function(){
+         $(".wb-preview").removeClass("preview-selected")
+         $(".fileName").removeClass("fileName-selected")
+        $(this).children(".wb-preview").addClass("preview-selected")
+         $(this).children(".fileName").addClass("fileName-selected")
+       
+        
+    })}
+
 
