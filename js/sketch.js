@@ -26,12 +26,12 @@ var pupilsArray = Array.from(pupilsHTMLCollection);
 // input setup
 var input={
   mouseX:{
-    start:0,
+    start:-window.innerWidth,
     end: window.innerWidth,
     current:0,
   },
   mouseY:{
-    start:0,
+    start:-window.innerHeight,
     end: window.innerHeight,
     current:0,
   }
