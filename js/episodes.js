@@ -1,7 +1,7 @@
 const episodi = [{
     "titolo": "EP01 - QANON DETECTION",
     "episodio": "1",
-    "descrizione": "The episode starts with a brief presentation of Qanon and its presence on social media. The identification of a conspirative Instagram account will be the starting point of the research.",
+    "descrizione": "The episode starts with a brief presentation of Qanon and its presence on social media. The identification of a conspiracy theory related account will be the starting point of the research.",
     "link1": "https://towardsdatascience.com/grassroots-or-influencer-driven-a-social-network-analysis-of-the-qanon-conspiracy-theory-f99617f8454d",
     "link2": "https://www.vox.com/videos/2020/10/28/21538763/save-the-children-qanon-instagram",
     "link3": "https://www.youtube.com/watch?v=AhYRHif-U8I",
@@ -18,7 +18,7 @@ const episodi = [{
   {
     "titolo": "EP02 - SAVE THE CHILDREN?",
     "episodio": "2",
-    "descrizione": "The posts analysis of the profile previously found led to the identification of an unexpected truth: not all messages are harmless as it could seem.",
+    "descrizione": "The posts analysis of the previously found profile led to the identification of an unexpected truth: not all messages are harmless as it could seem.",
     "link1": "https://www.nytimes.com/2020/08/12/technology/qanon-save-the-children-trafficking.html",
     "link2": "https://www.nbcnews.com/tech/tech-news/qanon-looms-behind-nationwide-rallies-viral-hashtags-n1237722",
     "link3": "https://rantt.com/qanon-hijacked-savethechildren",
@@ -35,7 +35,7 @@ const episodi = [{
   {
     "titolo": "EP03 - A SHARING COMMUNITY",
     "episodio": "3",
-    "descrizione": "The analysis goes on by focusing on the importance of content re-posting which allows the community to grow. This process brought to the identification of another interesting profile.",
+    "descrizione": "The analysis goes on by focusing on the importance of the phenomenon of content re-posting which allows the community to grow. This process brought to the identification of another interesting profile.",
     "link1": "https://www.csis.org/blogs/technology-policy-blog/no-one-immune-spread-q-anon-through-social-media-and-pandemic",
     "link2": "https://firstdraftnews.org/latest/how-qanon-content-endures-on-social-media-through-visuals-and-code-words/",
     "link3": "https://www.sbs.com.au/news/the-feed/pastel-qanon-the-female-lifestyle-bloggers-and-influencers-spreading-conspiracy-theories-through-instagram",
@@ -52,7 +52,7 @@ const episodi = [{
   {
     "titolo": "EP04 - PLANDEMIC HIGHLIGHTS",
     "episodio": "4",
-    "descrizione": "Instagram bans potentially dangerous posts, nevertheless some controversial contents are able to avoid the censorship: the highlights are an effective way to spread disinformation.",
+    "descrizione": "Instagram bans potentially dangerous posts, nevertheless some controversial content still avoids the censorship: the highlights are an effective way to spread disinformation.",
     "link1": "https://eu.usatoday.com/story/news/factcheck/2020/08/11/fact-check-mask-wearing-not-connected-child-trafficking/3318642001/",
     "link2": "https://www.insider.com/lifestyle-influencers-using-covid-19-to-spread-qanon-conspiracy-theory-2020-5",
     "link3": "https://www.glossy.co/beauty/i-love-you-my-beautiful-qanon-when-lifestyle-influencers-also-peddle-conspiracy-theories/",
@@ -86,7 +86,7 @@ const episodi = [{
   {
     "titolo": "EP06 - VERIFIED CONSPIRACY THEORIES",
     "episodio": "6",
-    "descrizione": "The research is deep inside the rabbithole: even some verified profiles share conspiracy theory related content. This is potentially dangerous.",
+    "descrizione": "The research is deep inside the rabbit hole: even some verified profiles share conspiracy theory related content. This is potentially dangerous.",
     "link1": "",
     "link2": "",
     "link3": "",
@@ -103,7 +103,7 @@ const episodi = [{
   {
     "titolo": "EP07 - THE REASON WHY",
     "episodio": "7",
-    "descrizione": "In the extra episode we explain the reasons that prompted us _x000B_to do this research and why_x000B_it is important to analyze these phenomena.",
+    "descrizione": "In the extra episode we explain the reasons that prompted us  to do this research and why  it is important to analyze these phenomena.",
     "link1": "https://www.youtube.com/watch?v=-7o3bVInA2A&t=193s",
     "link2": "https://www.youtube.com/watch?v=8_fn-a5qmxY",
     "link3": "https://www.youtube.com/watch?v=_7FWr2Nvf9I&t=15s",

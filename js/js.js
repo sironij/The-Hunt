@@ -15,8 +15,8 @@
 
     }
   }
-<<<<<<< HEAD
-}
+
+
 
 var x = window.matchMedia("(max-width: 700px)")
 alertMobile(x) // Call listener function at run time
@@ -114,13 +114,13 @@ $("#alert1_btn").click(function() {
 
 $("#alert2_btn").click(function() {
        console.log("bottone2 premuto")
-    $("#alert_active2").hide();  
+    $("#alert_active2").hide();
   $("html").removeClass("lockScroll");
   $(".alert_container2").fadeOut();
-  
+
   $("#wrapper").removeClass("unfocused");
 
-  
+
 });
 
 $("#alert3_btn").click(function() {
