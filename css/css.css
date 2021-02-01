@@ -528,6 +528,12 @@ opacity: 20%; */
     margin-right: 4px;
   }
 
+#alessandro{
+    height: 95px;
+    width: 155px;
+}
+
+
   .preview img {
     cursor: pointer;
     width: 100%;
