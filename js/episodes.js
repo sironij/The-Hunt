@@ -1,5 +1,5 @@
 const episodi = [{
-    "titolo": "QANON DETECTION",
+    "titolo": "EP01 - QANON DETECTION",
     "episodio": "1",
     "descrizione": "The episode starts with a brief presentation of Qanon and its presence on social media. The identification of a conspirative Instagram account will be the starting point of the research.",
     "link1": "https://towardsdatascience.com/grassroots-or-influencer-driven-a-social-network-analysis-of-the-qanon-conspiracy-theory-f99617f8454d",
@@ -16,7 +16,7 @@ const episodi = [{
     "endtitle": "Let the research begin!"
   },
   {
-    "titolo": "SAVE THE CHILDREN?",
+    "titolo": "EP02 - SAVE THE CHILDREN?",
     "episodio": "2",
     "descrizione": "The posts analysis of the profile previously found led to the identification of an unexpected truth: not all messages are harmless as it could seem.",
     "link1": "https://www.nytimes.com/2020/08/12/technology/qanon-save-the-children-trafficking.html",
@@ -33,7 +33,7 @@ const episodi = [{
     "endtitle": "Take a closer look"
   },
   {
-    "titolo": "A SHARING COMMUNITY",
+    "titolo": "EP03 - A SHARING COMMUNITY",
     "episodio": "3",
     "descrizione": "The analysis goes on by focusing on the importance of content re-posting which allows the community to grow. This process brought to the identification of another interesting profile.",
     "link1": "https://www.csis.org/blogs/technology-policy-blog/no-one-immune-spread-q-anon-through-social-media-and-pandemic",
@@ -50,7 +50,7 @@ const episodi = [{
     "endtitle": "It gets more and more interesting..."
   },
   {
-    "titolo": "PLANDEMIC HIGHLIGHTS",
+    "titolo": "EP04 - PLANDEMIC HIGHLIGHTS",
     "episodio": "4",
     "descrizione": "Instagram bans potentially dangerous posts, nevertheless some controversial contents are able to avoid the censorship: the highlights are an effective way to spread disinformation.",
     "link1": "https://eu.usatoday.com/story/news/factcheck/2020/08/11/fact-check-mask-wearing-not-connected-child-trafficking/3318642001/",
@@ -67,7 +67,7 @@ const episodi = [{
     "endtitle": "We are getting closer"
   },
   {
-    "titolo": "CURIOUS FOLLOWINGS",
+    "titolo": "EP05 - CURIOUS FOLLOWINGS",
     "episodio": "5",
     "descrizione": "In this episode the research is brought to the next level: by applying the method used so far, it is now easier to find many interconnected conspiracy theory related profiles.",
     "link1": "",
@@ -84,7 +84,7 @@ const episodi = [{
     "endtitle": "Now it is the real deal"
   },
   {
-    "titolo": "VERIFIED CONSPIRACY THEORIES",
+    "titolo": "EP06 - VERIFIED CONSPIRACY THEORIES",
     "episodio": "6",
     "descrizione": "The research is deep inside the rabbithole: even some verified profiles share conspiracy theory related content. This is potentially dangerous.",
     "link1": "",
@@ -101,7 +101,7 @@ const episodi = [{
     "endtitle": "Is that all?"
   },
   {
-    "titolo": "THE REASON WHY",
+    "titolo": "EP07 - THE REASON WHY",
     "episodio": "7",
     "descrizione": "In the extra episode we explain the reasons that prompted us _x000B_to do this research and why_x000B_it is important to analyze these phenomena.",
     "link1": "https://www.youtube.com/watch?v=-7o3bVInA2A&t=193s",
