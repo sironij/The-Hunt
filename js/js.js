@@ -77,56 +77,52 @@ jQuery.fn.center = function() {
 
 $(".alert_container").inViewport(function(px) {
   if (px) $("html").addClass("lockScroll");
-  if (px) $(".menu-bar").addClass("unfocused");
-  if (px) $(".container").addClass("unfocused");
-  if (px) $(".sticky").addClass("unfocused");
+  if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container").center();
 });
 
 $(".alert_container2").inViewport(function(px) {
   if (px) $("html").addClass("lockScroll");
-  if (px) $(".menu-bar").addClass("unfocused");
-  if (px) $(".container").addClass("unfocused");
-  if (px) $(".sticky").addClass("unfocused");
+  if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container2").center();
 });
 
 $(".alert_container3").inViewport(function(px) {
   if (px) $("html").addClass("lockScroll");
-  if (px) $(".menu-bar").addClass("unfocused");
-  if (px) $(".container").addClass("unfocused");
-  if (px) $(".sticky").addClass("unfocused");
+  if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container3").center();
 });
 
 // reactivate scroll
 
 $("#alert1_btn").click(function() {
+    console.log("bottone1 premuto")
+      $("#alert_active").hide();
   $("html").removeClass("lockScroll");
-  $(".menu-bar").removeClass("unfocused");
-  $(".container").removeClass("unfocused");
-  $(".sticky").removeClass("unfocused");
-
   $(".alert_container").fadeOut();
-  $("#alert_active").hide();
+
+  $("#wrapper").removeClass("unfocused");
+
 });
 
 $("#alert2_btn").click(function() {
+       console.log("bottone2 premuto")
+    $("#alert_active2").hide();  
   $("html").removeClass("lockScroll");
-  $(".menu-bar").removeClass("unfocused");
-  $(".container").removeClass("unfocused");
-  $(".sticky").removeClass("unfocused");
-
   $(".alert_container2").fadeOut();
-  $("#alert_active2").hide();
+  
+  $("#wrapper").removeClass("unfocused");
+
+  
 });
 
 $("#alert3_btn").click(function() {
+       console.log("bottone3 premuto")
+      $("#alert_active3").hide();
   $("html").removeClass("lockScroll");
-  $(".menu-bar").removeClass("unfocused");
-  $(".container").removeClass("unfocused");
-  $(".sticky").removeClass("unfocused");
-
   $(".alert_container3").fadeOut();
-  $("#alert_active3").hide();
+
+  $("#wrapper").removeClass("unfocused");
+
+
 });
