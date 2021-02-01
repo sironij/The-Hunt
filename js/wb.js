@@ -130,3 +130,5 @@ $(".close img").click(function() {
 
 $("#fileModal").draggable();
     }
+
+    
