@@ -1,5 +1,7 @@
 
-
+var padre = 0;
+var figlio = 0;
+var spiritoSanto =  0;
 
   $(document).scroll(function() {
     $("#scroll").fadeOut("slow");
@@ -25,6 +27,9 @@ x.addListener(alertMobile) // Attach listener function on state changes
 
 // prevent refresh
 
+
+
+
 $(window).on('unload', function() {
   $(window).scrollTop(0);
 });
@@ -39,6 +44,7 @@ if ('scrollRestoration' in history) {
 
 // viewport plug in
 ;
+
 (function($, win) {
   $.fn.inViewport = function(cb) {
     return this.each(function(i, el) {
@@ -56,7 +62,12 @@ if ('scrollRestoration' in history) {
 }(jQuery, window));
 
 $("#alert_active").inViewport(function(px) {
+
   if (px) $(".alert_container").fadeIn("slow");
+
+    
+ 
+   
 });
 
 $("#alert_active2").inViewport(function(px) {
@@ -83,32 +94,40 @@ jQuery.fn.center = function() {
 // lock scroll on alert
 
 $(".alert_container").inViewport(function(px) {
+  if (padre ==0){
   if (px) $("html").addClass("lockScroll");
   if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container").center();
+  }
 });
 
 $(".alert_container2").inViewport(function(px) {
+    if (figlio ==0){
   if (px) $("html").addClass("lockScroll");
   if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container2").center();
+    }
+    
 });
 
 $(".alert_container3").inViewport(function(px) {
+    if (spiritoSanto ==0){
   if (px) $("html").addClass("lockScroll");
   if (px) $("#wrapper").addClass("unfocused");
-  $(".alert_container3").center();
+  $(".alert_container3").center();}
+    
 });
 
 // reactivate scroll
 
 $("#alert1_btn").click(function() {
-    console.log("bottone1 premuto")
+    
       $("#alert_active").hide();
   $("html").removeClass("lockScroll");
   $(".alert_container").fadeOut();
 
   $("#wrapper").removeClass("unfocused");
+    padre = 1
 
 });
 
@@ -119,8 +138,7 @@ $("#alert2_btn").click(function() {
   $(".alert_container2").fadeOut();
 
   $("#wrapper").removeClass("unfocused");
-
-
+figlio = 1
 });
 
 $("#alert3_btn").click(function() {
@@ -131,5 +149,5 @@ $("#alert3_btn").click(function() {
 
   $("#wrapper").removeClass("unfocused");
 
-
+spiritoSanto = 1
 });
