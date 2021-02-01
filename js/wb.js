@@ -108,7 +108,7 @@ $(".wb-el").click(function(){
       $('#credit2').append("<div class='avatar'><a href=' andreamorandini.com' target='_blank'><img src='images/bellissimi/mauro.jpeg'></a> <h5>Marek <br> Morandinski</h5><p>andremora97@gmail.com</p><p>IG: andreamario.m</p></div>")
       $('#credit2').append("<div class='avatar'><a href='https://jacoposironi.com' target='_blank'><img src='images/bellissimi/jac.jpeg'></a> <h5>Sir Johnatan</h5> <p>sironij@gmail.com</p><p>IG: jacopo_sir</p></div></div>")
 
-        $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Mirko Valley</h5><p>è troppo impegnato per rispondervi</p><p>probabilmente si sta suicidando</p></div>")
+        $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Randy Mento</h5><p>marco.valli@gmail.com</p><a href='https://www.instagram.com/pol_do/' target='_blank'>IG: Pol_do</p></div>")
         $("#marco").click(function(){
            console.log("Sono forse uno dei 7 migliori coder al mondo - MV")       
                   })
