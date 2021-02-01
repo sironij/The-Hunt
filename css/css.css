@@ -342,7 +342,7 @@ opacity: 20%; */
 
   .alert_btn {
     position: absolute;
-    top: 35%;
+    top: 70%;
     left: 60%;
     transform: translate(-50%, -50%);
     cursor: pointer;
