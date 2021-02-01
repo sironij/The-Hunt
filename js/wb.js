@@ -13,7 +13,7 @@ const sezioni = [
 
 function iniziale (seziones){
     $('#wb-txt').text(seziones.descrizione) ;
-        $('.wb-documentation').append("<div style='align-self:flex-end'><div class='wb-preview'><a href='https://densitydesign.github.io/teaching-dd16/course-results/es02/group03/question-1/' target='_blank'><img id='alessandro' class='50special'   src="+seziones.img1+"></a></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
+        $('.wb-documentation').append("<div style='align-self:flex-end'><div class='wb-preview'><a href='https://densitydesign.github.io/teaching-dd16/course-results/es02/group03/question-1/' target='_blank'><img id='alessandro'    src="+seziones.img1+"></a></div>  <div class='fileName'><p>"+seziones.imgname1+"</p></div></div>")
         $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img class='50special' src="+seziones.img2+"></div>  <div class='fileName'><p>"+seziones.imgname2+"</p></div></div>")
         $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img  class='50special' src="+seziones.img3+"></div>  <div class='fileName'><p >"+seziones.imgname3+"</p></div></div>")
         $('.wb-documentation').append("<div class='wb-wrap'><div class='wb-preview'><img class='50special' src="+seziones.img4+"></div>  <div class='fileName'><p>"+seziones.imgname4+"</p></div></div>")
@@ -70,7 +70,7 @@ $(".wb-el").click(function(){
      $('#wb-txt').text(sezione.descrizione)
 
      $('.wb-description').append("<div class='wb-carousel'><div ><img  src="+sezione.img1+"></div><div><img src="+sezione.img2+"></div><div><img src="+sezione.img3+"> </div> <div><img  src="+sezione.img4+"></div><div><img src="+sezione.img5+"></div><div><img src="+sezione.img6+"></div></div>");
-     
+
        $("#description3").text(sezione.descrizione3)
         $('.wb-description').append("<div class='wb-carousel'><div ><img  src="+sezione.img7+"></div><div><img src="+sezione.img8+"></div>");
      $('.wb-description').append("<p id='description3'></>")
@@ -101,16 +101,16 @@ $(".wb-el").click(function(){
         console.log("Ciao prof Mauri")
       $('.wb-description').append("<div id='wb-creditsContainer'></div>")
       $('#wb-creditsContainer').append("<div id='credit1' class='wb-creditsRow'></div>")
-      $('#credit1').append("<div class='avatar'> <a href='https://elisafinesso.com' target='_blank'><img src='images/bellissimi/finish.jpg'></a><h5>Elsa Finnegan</h5><p>finesso.elisa@gmail.com</p><p>IG: ccamalow</p></div>")
-      $('#credit1').append("<div class='avatar'><a><img src='images/bellissimi/gib.jpg'></a><h5>Ilenia Gibiloba</h5><p>elena.gibelli1@gmail.com</p><p>IG: rgb.elli</p></div>")
-      $('#credit1').append("<div class='avatar'><a href='http://federicalaurencio.bss.design/' target='_blank'><img src='images/bellissimi/lau.jpeg'></a><h5>Laura Laureida</h5><p>è suscettibile, non scrivetele</p><p>fidatevi non fatelo</p></div>")
+      $('#credit1').append("<div class='avatar'> <a href='https://elisafinesso.com' target='_blank'><img src='images/bellissimi/finish.jpg'></a><h5>Elsa Finesso</h5><p>finesso.elisa@gmail.com</p><a href='https://www.instagram.com/ccamalow/' target='_blank'>IG: ccamalow</a></div>")
+      $('#credit1').append("<div class='avatar'><a><img src='images/bellissimi/gib.jpg'></a><h5>Ilenia Gibiloba</h5><p>elena.gibelli1@gmail.com</p><a href='https://www.instagram.com/rgb.elli/' target='_blank'>IG: rgb.elli</a></div>")
+      $('#credit1').append("<div class='avatar'><a href='http://federicalaurencio.bss.design/' target='_blank'><img src='images/bellissimi/lau.jpeg'></a><h5>Fede <em>Awaken</em> Lau</h5><p>federica.laurencio@gmail.com</p><a href='https://www.instagram.com/rikalau_/' target='_blank'>IG: rikalau_</a></div>")
          $('#wb-creditsContainer').append("<div id='credit2' class='wb-creditsRow'></div>")
-      $('#credit2').append("<div class='avatar'><a href=' andreamorandini.com' target='_blank'><img src='images/bellissimi/mauro.jpeg'></a> <h5>Marek <br> Morandinski</h5><p>andremora97@gmail.com</p><p>IG: andreamario.m</p></div>")
-      $('#credit2').append("<div class='avatar'><a href='https://jacoposironi.com' target='_blank'><img src='images/bellissimi/jac.png'></a> <h5>Sir Johnatan</h5> <p>sironij@gmail.com</p><p>IG: jacopo_sir</p></div></div>")
+      $('#credit2').append("<div class='avatar'><a href=' andreamorandini.com' target='_blank'><img src='images/bellissimi/mauro.jpeg'></a> <h5>Marek <br> Morandinski</h5><p>andremora97@gmail.com</p><a href='https://www.instagram.com/andreamario.m/' target='_blank'>IG: andreamario.m</a></div>")
+      $('#credit2').append("<div class='avatar'><a href='https://jacoposironi.com' target='_blank'><img src='images/bellissimi/jac.png'></a> <h5>Sir Johnatan</h5> <p>sironij@gmail.com</p><a href='https://www.instagram.com/jburrasca/' target='_blank'>IG: jburrasca</a></div></div>")
 
-        $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Randy Mento</h5><p>marco.valli@gmail.com</p><a href='https://www.instagram.com/pol_do/' target='_blank'>IG: Pol_do</p></div>")
+        $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Randy Mento</h5><p>marco.valli@gmail.com</p><a href='https://www.instagram.com/pol_do/' target='_blank'>IG: Pol_do</a></div>")
         $("#marco").click(function(){
-           console.log("Sono forse uno dei 7 migliori coder al mondo - MV")       
+           console.log("Sono forse uno dei 7 migliori coder al mondo - MV")
                   })
 
      }
@@ -122,7 +122,7 @@ $(".wb-el").click(function(){
    } );
 
 function lucrezia(){
-$(".50special").click(function() { 
+$(".50special").click(function() {
     console.log('bailamorena')
   $("#fileModal").fadeIn()
     $("#modalin").attr("src",$(this).attr("src"))
@@ -142,8 +142,6 @@ function jacopo(){
          $(".fileName").removeClass("fileName-selected")
         $(this).children(".wb-preview").addClass("preview-selected")
          $(this).children(".fileName").addClass("fileName-selected")
-       
-        
+
+
     })}
-
-

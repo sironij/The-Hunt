@@ -13,6 +13,9 @@ var spiritoSanto =  0;
       $("#mobileAlert").css({
         "display": "flex"
       });
+      $("html").css({
+        "overflow": "hidden"
+      });
     } else {
 
     }
@@ -65,9 +68,9 @@ $("#alert_active").inViewport(function(px) {
 
   if (px) $(".alert_container").fadeIn("slow");
 
-    
- 
-   
+
+
+
 });
 
 $("#alert_active2").inViewport(function(px) {
@@ -107,7 +110,7 @@ $(".alert_container2").inViewport(function(px) {
   if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container2").center();
     }
-    
+
 });
 
 $(".alert_container3").inViewport(function(px) {
@@ -115,13 +118,13 @@ $(".alert_container3").inViewport(function(px) {
   if (px) $("html").addClass("lockScroll");
   if (px) $("#wrapper").addClass("unfocused");
   $(".alert_container3").center();}
-    
+
 });
 
 // reactivate scroll
 
 $("#alert1_btn").click(function() {
-    
+
       $("#alert_active").hide();
   $("html").removeClass("lockScroll");
   $(".alert_container").fadeOut();
