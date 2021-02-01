@@ -12,9 +12,11 @@
     background-size: cover;
 */
   }
-hr {
-  border: 0.1px rgba(0,0,0,.2)
-}
+
+  hr {
+    border: 0.1px rgba(0, 0, 0, .2)
+  }
+
   .c {
     fill: none;
     stroke: #f0f0f0;
@@ -141,7 +143,7 @@ opacity: 20%; */
   }
 
   .titoletto {
-    font-weight: 600;
+    font-family: 'sf_pro_textbold';
   }
 
   #mobileAlert {
@@ -173,12 +175,12 @@ opacity: 20%; */
     cursor: pointer;
   }
 
-#txtNext{
-    color:white;
+  #txtNext {
+    color: white;
     text-decoration: none;
     align-items: center;
     display: flex;
-}
+  }
 
   .menu-bar {
     position: fixed;
@@ -513,7 +515,7 @@ opacity: 20%; */
 
   .suggeriti {
     flex-grow: 1;
-    margin-top:1em;
+    margin-top: 1em;
     margin-left: 1.5em;
     margin-right: 1.5em;
     display: flex;
@@ -530,11 +532,10 @@ opacity: 20%; */
     margin-right: 4px;
   }
 
-#alessandro{
+  #alessandro {
     height: 95px;
     width: 155px;
-}
-
+  }
 
   .preview img {
     cursor: pointer;
