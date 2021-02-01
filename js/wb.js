@@ -82,11 +82,11 @@ $(".wb-el").click(function(){
     else if (sezione.titolo === "Episodes"){
     $('#wb-txt').text(sezione.descrizione);
     $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img1+">");
-    $('.wb-description').append("<p>"+sezione.descrizione+"</p>")
+    $('.wb-description').append("<p>"+sezione.descrizione2+"</p>")
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img2+"></div><div><img  src="+sezione.img3+"></div><div><img  src="+sezione.img4+"></div></div>");
-    $('.wb-description').append("<p>"+sezione.descrizione+"</p>")
+    $('.wb-description').append("<p>"+sezione.descrizione3+"</p>")
               $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img5+"></div><div><img  src="+sezione.img6+"></div><div><img  src="+sezione.img7+"></div></div>");
-        $('.wb-description').append("<p>"+sezione.descrizione+"</p>");
+        $('.wb-description').append("<p>"+sezione.descrizione4+"</p>");
         $('.wb-description').append("<div class='wb-carousel'><div><img  src="+sezione.img8+">");
 
    }
@@ -97,7 +97,7 @@ $(".wb-el").click(function(){
 
 
     else if (sezione.titolo === "Credits") { //Credits
-        console.log("bestiadidio")
+        console.log("Ciao prof Mauri")
       $('.wb-description').append("<div id='wb-creditsContainer'></div>")
       $('#wb-creditsContainer').append("<div id='credit1' class='wb-creditsRow'></div>")
       $('#credit1').append("<div class='avatar'> <a href='https://elisafinesso.com' target='_blank'><img src='images/bellissimi/finish.jpg'></a><h5>Elsa Finnegan</h5><p>finesso.elisa@gmail.com</p><p>IG: ccamalow</p></div>")
@@ -107,7 +107,11 @@ $(".wb-el").click(function(){
       $('#credit2').append("<div class='avatar'><a href=' andreamorandini.com' target='_blank'><img src='images/bellissimi/mauro.jpeg'></a> <h5>Marek <br> Morandinski</h5><p>andremora97@gmail.com</p><p>IG: andreamario.m</p></div>")
       $('#credit2').append("<div class='avatar'><a href='https://jacoposironi.com' target='_blank'><img src='images/bellissimi/jac.jpeg'></a> <h5>Sir Johnatan</h5> <p>sironij@gmail.com</p><p>IG: jacopo_sir</p></div></div>")
 
-        $('#credit2').append("<div class='avatar'><a><img src='images/bellissimi/mrc.jpeg'> </a><h5>Mirko Valley</h5><p>è troppo impegnato per rispondervi</p><p>probabilmente si sta suicidando</p></div>")
+        $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Mirko Valley</h5><p>è troppo impegnato per rispondervi</p><p>probabilmente si sta suicidando</p></div>")
+        $("#marco").click(function(){
+           console.log("Sono forse uno dei 7 migliori coder al mondo - MV")       
+                  })
+
      }
 
 
@@ -130,3 +134,4 @@ $(".close img").click(function() {
 
 $("#fileModal").draggable();
     }
+
