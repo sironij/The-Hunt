@@ -108,8 +108,19 @@ $(".wb-el").click(function(){
          $('#wb-creditsContainer').append("<div id='credit2' class='wb-creditsRow'></div>")
       $('#credit2').append("<div class='avatar'><a href=' andreamorandini.com' target='_blank'><img src='images/bellissimi/mauro.jpeg'></a> <h5>Marek <br> Morandinski</h5><p>andremora97@gmail.com</p><a href='https://www.instagram.com/andreamario.m/' target='_blank'>IG: andreamario.m</a></div>")
       $('#credit2').append("<div class='avatar'><a href='https://jacoposironi.com' target='_blank'><img src='images/bellissimi/jac.png'></a> <h5>Sir Johnatan</h5> <p>sironij@gmail.com</p><a href='https://www.instagram.com/jburrasca/' target='_blank'>IG: jburrasca</a></div></div>")
+      $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Randy Mento</h5><p>marco.valli@gmail.com</p><a href='https://www.instagram.com/pol_do/' target='_blank'>IG: Pol_do</a></div>")
+        
+    
+      $('#wb-creditsContainer').append("<div id='credit3' class='wb-creditsRow'></div>")
+      $('#credit3').append("<div  class='avatar'><img  src='images/bellissimi/loghi.png'></div>")
+       
+        $('#credit3').append("<div  class='avatar'><h3>Professors</h3><p>Michele Mauri</p><p>Gabriele Colombo</p><p>Angeles Briones</p><p>Simone Vantini</p> <p>Salvatore Zingale</p> </div>")
 
-        $('#credit2').append("<div id='marco' class='avatar'><a><img  src='images/bellissimi/mrc.jpeg'> </a><h5>Randy Mento</h5><p>marco.valli@gmail.com</p><a href='https://www.instagram.com/pol_do/' target='_blank'>IG: Pol_do</a></div>")
+         $('#credit3').append("<div  class='avatar'><h3>Teachers Assistants</h3><p>Andrea Benedetti</p><p>Tommaso Elli</p><p>Beatrice Gobbo</p><p>Antonella Autuori</p><p>Matteo Bettini</p> <p>Andrea Elena Febres Medina</p> </div>")
+        
+        
+        
+        
         $("#marco").click(function(){
            console.log("Sono forse uno dei 7 migliori coder al mondo - MV")
                   })
