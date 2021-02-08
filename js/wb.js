@@ -112,7 +112,7 @@ $(".wb-el").click(function(){
         
     
       $('#wb-creditsContainer').append("<div id='credit3' class='wb-creditsRow'></div>")
-      $('#credit3').append("<div  class='avatar'><img  id='#ciaoMirkoFikkastocazzodiId' src='images/bellissimi/loghi.png'></div>")
+      $('#credit3').append("<div  class='avatar'><img  id='ciaoMirkoFikkastocazzodiId' src='images/bellissimi/loghi.png'></div>")
        
         $('#credit3').append("<div  class='avatar'><h3>Professors</h3><p>Michele Mauri</p><p>Gabriele Colombo</p><p>Angeles Briones</p><p>Simone Vantini</p> <p>Salvatore Zingale</p> </div>")
 
